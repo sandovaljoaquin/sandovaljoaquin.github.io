@@ -1,4 +1,19 @@
 ---
-title: "sandovaljoaquin.github.io"
+title: "Joaquin Sandoval"
+image: IMG_8696.jpeg
+about: 
+  template: solana
+  image-shape: rounded
+  image-width: 12em
+  links: 
+    - text: GitHub
+      href: https://github.com/sandovaljoaquin
+      target: _blank
+    - text: Email
+      href: mailto:joaquinsandoval@duck.com
+      target: _blank
 ---
+
+Hello, my name is Joaquin Sandoval. I am currently a student in the Masters of Environmental Data Science Program at the Bren School of Environmental Science and Management at UC Santa Barbara. I am excited to combine my background in Marine Ecology with strong data analysis and visualization skills to enhance coastal conservation efforts wherever I might go! 
+
 

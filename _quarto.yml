@@ -3,20 +3,22 @@ project:
   output-dir: docs
 
 website:
-  title: "sandovaljoaquin.github.io"
+  title: "The Sandman"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+      - href: resources.qmd
+      - text: Resources
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: morph
     css: styles.css
     toc: true
+    page-layout: full
+    
 
 
 
