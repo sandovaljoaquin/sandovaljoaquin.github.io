@@ -6,11 +6,11 @@ website:
   title: "The Sandman"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
-      - href: resources.qmd
-      - text: Resources
+    #  - href: index.qmd
+    #    text: Home
+    #  - about.qmd
+    #  - href: resources.qmd
+    #  - text: Resources
 
 format:
   html:
