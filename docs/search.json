@@ -11,6 +11,27 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Describe what I do professionally"
+  },
+  {
+    "objectID": "about.html#what-i-do-for-work",
+    "href": "about.html#what-i-do-for-work",
+    "title": "About",
+    "section": "",
+    "text": "Describe what I do professionally"
+  },
+  {
+    "objectID": "about.html#oustide-work",
+    "href": "about.html#oustide-work",
+    "title": "About",
+    "section": "Oustide work",
+    "text": "Oustide work\nOutside of work I"
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "this is an h1 element\n\n\nthis is an h1 element with the tile class\n\n\nthis paragraph is brown\n\n\nthis text is centered and brown"
   }
 ]

@@ -1,0 +1,39 @@
+/*-- scss:defaults --*/
+
+// colors
+
+$navyblue: #0a0908; 
+$lighternavy: #22333b;
+$lighttan: #eae0d5;
+$kakhi: #c6ac8f;
+$brown: #5e503f;
+
+
+//import google fonts 
+
+
+// define quarto variables 
+
+$body-bg: $lighttan; 
+$navbar-bg: $lighternavy;
+$navbar-fg: $kakhi;
+$navbar-hl: $kakhi;
+$linkcolor: $kakhi;
+
+/*-- scss:rules --*/
+
+h1, h2{
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.title{
+  color: $kakhi;
+}
+
+.center-text {
+  text-align: center;
+  color: $brown;
+}
+
+
