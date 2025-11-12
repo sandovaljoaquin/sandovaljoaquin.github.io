@@ -13,7 +13,7 @@ citation:
   url: https://sandovaljoaquin.github.io/blogposts/practice-post
 bibliography: references.bib
 draft: true
-draft-mode: linked
+draft-mode: linked # sending with email, someone could still use url 
 ---
 
 This is where body of blog post begins! I'm going to add a footnote here[^1] Adding a second [^2]
