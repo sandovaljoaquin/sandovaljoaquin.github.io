@@ -14,6 +14,7 @@ website:
       - about.qmd
       - href: resources.qmd
         text: Resources
+      - blogposts.qmd
   page-footer: 
     left: Copyright 2025, Joaquin Sandoval
     right: 

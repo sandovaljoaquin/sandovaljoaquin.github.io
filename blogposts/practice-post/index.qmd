@@ -1,0 +1,25 @@
+---
+title: "Practice blog post"
+description: "Short description."
+author: 
+  - name: Joaquin Sandoval
+    url: https://sandovaljoaquin.github.io
+    affiliation : MEDS 
+    affiliation-url: https://bren.ucsb.edu/
+date: 2025-11-05
+categories: [R, Python, Geospatial]
+image: IMG_1463.jpeg
+citation: 
+  url: https://sandovaljoaquin.github.io/blogposts/practice-post
+bibliography: references.bib
+draft: true
+draft-mode: linked
+---
+
+This is where body of blog post begins! I'm going to add a footnote here[^1] Adding a second [^2]
+
+[^1]: Here is additional context that might be helpful
+
+[^2]: Yup
+
+Cite myself[@sandoval2025]

@@ -1,10 +1,24 @@
 [
   {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "this is an h1 element\n\n\nthis is an h1 element with the tile class\n\n\nthis paragraph is brown\n\n\nthis text is centered and brown"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Joaquin Sandoval",
     "section": "",
     "text": "Hello, my name is Joaquin Sandoval. I am currently a student in the Masters of Environmental Data Science Program at the Bren School of Environmental Science and Management at UC Santa Barbara. I am excited to combine my background in Marine Ecology with strong data analysis and visualization skills to enhance coastal conservation efforts wherever I might go!"
+  },
+  {
+    "objectID": "blogposts.html",
+    "href": "blogposts.html",
+    "title": "Blog Posts",
+    "section": "",
+    "text": "No matching items"
   },
   {
     "objectID": "about.html",
@@ -26,12 +40,5 @@
     "title": "About",
     "section": "Oustide work",
     "text": "Oustide work\nOutside of work I"
-  },
-  {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Resources",
-    "section": "",
-    "text": "this is an h1 element\n\n\nthis is an h1 element with the tile class\n\n\nthis paragraph is brown\n\n\nthis text is centered and brown"
   }
 ]
