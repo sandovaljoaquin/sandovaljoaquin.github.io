@@ -2,8 +2,11 @@
 title: "About"
 ---
 
-About this site
+## What I do for work 
 
-```{r}
-1 + 1
-```
+Describe what I do professionally 
+
+
+## Oustide work 
+
+Outside of work I 

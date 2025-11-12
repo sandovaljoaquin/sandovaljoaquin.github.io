@@ -7,9 +7,11 @@ about:
   image-width: 12em
   links: 
     - text: GitHub
+      icon: github
       href: https://github.com/sandovaljoaquin
       target: _blank
     - text: Email
+      icon: envelope
       href: mailto:joaquinsandoval@duck.com
       target: _blank
 ---

@@ -4,20 +4,29 @@ project:
 
 website:
   title: "The Sandman"
+ # favicon: images/favicon.pmg
   navbar:
-    left:
+    title: false
+    logo: images/logo.png
+    right:
       - href: index.qmd
         text: Home
-      # - about.qmd
-      # - href: resources.qmd
-      # - text: Resources
+      - about.qmd
+      - href: resources.qmd
+        text: Resources
+  page-footer: 
+    left: Copyright 2025, Joaquin Sandoval
+    right: 
+      - href: https://github.com/sandovaljoaquin
+      - icon: github
 
 format:
   html:
-    theme: morph
+    theme: styles.scss
     css: styles.css
     toc: true
     page-layout: full
+    mainfont: Nunito
     
 
 
