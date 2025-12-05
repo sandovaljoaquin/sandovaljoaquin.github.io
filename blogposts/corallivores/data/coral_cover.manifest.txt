@@ -1,0 +1,6 @@
+Manifest file for knb-lter-mcr.1038.14.zip created on Tue Dec 02 20:39:58 UTC 2025
+MCR_LTER_Coral_Cover_Backreef_Wide_20250429.csv (542437 bytes)
+MCR_LTER_Coral_Cover_Backreef_Long_20250429.csv (2192701 bytes)
+knb-lter-mcr.1038.14.xml (81671 bytes)
+knb-lter-mcr.1038.14.txt (44752 bytes)
+knb-lter-mcr.1038.14.report.xml (48649 bytes)

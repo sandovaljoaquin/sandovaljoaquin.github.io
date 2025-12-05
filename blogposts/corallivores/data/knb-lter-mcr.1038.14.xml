@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml packageId="knb-lter-mcr.1038.14" scope="system"
+  system="https://pasta.edirepository.org"
+  xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0"
+  xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
+   <access
+    authSystem="https://pasta.edirepository.org/authentication"
+    order="allowFirst"
+    system="https://pasta.edirepository.org">
+      <allow>
+         <principal>uid=MCR,o=lter,dc=ecoinformatics,dc=org</principal>
+         <permission>all</permission>
+      </allow>
+      <allow>
+         <principal>public</principal>
+         <permission>read</permission>
+      </allow>
+   </access>
+   <dataset
+      id="1038">
+      <alternateIdentifier>knb-lter-mcr.1038</alternateIdentifier>
+      <alternateIdentifier
+        system="https://doi.org">doi:10.6073/pasta/04eb85fb55df96730862f6136dbbee05</alternateIdentifier><shortName>Backreef corals annual survey</shortName>
+      <title>MCR LTER: Coral Reef: Long-term Community Dynamics: Backreef (Lagoon) Corals Annual Survey, ongoing since 2005</title>
+      <creator>
+         <organizationName>Moorea Coral Reef LTER</organizationName>
+         <address>
+            <deliveryPoint>Marine Science Institute, University of California,</deliveryPoint>
+            <deliveryPoint>University of California</deliveryPoint>
+            <city>Santa Barbara</city>
+            <administrativeArea>CA</administrativeArea>
+            <postalCode>93106-6150</postalCode>
+            <country>United States</country>
+         </address>
+         <electronicMailAddress>mcrlter@msi.ucsb.edu</electronicMailAddress>
+         <onlineUrl>http://mcr.lternet.edu/</onlineUrl>
+         <userId
+        directory="https://ror.org/">017vyhs10</userId>
+      </creator>
+      <creator>
+         <individualName>
+            <givenName>Peter</givenName>
+            <surName>Edmunds</surName>
+         </individualName>
+         <organizationName>Moorea Coral Reef LTER</organizationName>
+         <positionName>Principle Investigator</positionName>
+         <address>
+            <deliveryPoint>Department of Biology</deliveryPoint>
+            <deliveryPoint>California State University</deliveryPoint>
+            <city>Northridge</city>
+            <administrativeArea>CA</administrativeArea>
+            <postalCode>91330-8303</postalCode>
+            <country>USA</country>
+         </address>
+         <phone
+        phonetype="voice">+1(818)677-2502</phone>
+         <electronicMailAddress>peter.edmunds@csun.edu</electronicMailAddress>
+         <onlineUrl>http://www.csun.edu/science-mathematics/biology/peter-j-edmunds</onlineUrl>
+         <userId
+        directory="https://orcid.org">0000-0002-9039-9347</userId>
+      </creator>
+      <metadataProvider>
+         <individualName>
+            <givenName>Hillary</givenName>
+            <surName>Krumbholz</surName>
+         </individualName>
+         <organizationName>MCR LTER</organizationName>
+         <positionName>Information Manager</positionName>
+         <address>
+            <deliveryPoint>UC Santa Barbara, Marine Science Institute, Building 520</deliveryPoint>
+            <city>Santa Barbara</city>
+            <administrativeArea>CA</administrativeArea>
+            <postalCode>93106-6150</postalCode>
+            <country>United States</country>
+         </address>
+         <electronicMailAddress>hkrumbholz@ucsb.edu</electronicMailAddress>
+         <userId
+        directory="https://orcid.org">0000-0001-9808-1758</userId>
+      </metadataProvider>
+      <associatedParty>
+         <individualName>
+            <givenName>Kathryn</givenName>
+            <surName>Scafidi</surName>
+         </individualName>
+         <organizationName>Moorea Coral Reef LTER</organizationName>
+         <positionName>Field Technician</positionName>
+         <userId
+        directory="https://orcid.org">0000-0001-7550-0163</userId>
+         <role>Field Technician</role>
+      </associatedParty>
+      <associatedParty>
+         <individualName>
+            <givenName>Vincent</givenName>
+            <surName>Moriarty</surName>
+         </individualName>
+         <organizationName>Moorea Coral Reef LTER</organizationName>
+         <userId
+        directory="https://orcid.org">0000-0002-7851-156X</userId>
+         <role>Former Field Technician</role>
+      </associatedParty>
+      <associatedParty>
+         <individualName>
+            <givenName>Sam</givenName>
+            <surName>Ginther</surName>
+         </individualName>
+         <organizationName>Moorea Coral Reef LTER</organizationName>
+         <phone
+        phonetype="voice">818.677.4335</phone>
+         <userId
+        directory="https://orcid.org">0000-0003-3263-8546</userId>
+         <role>Former Field Technician</role>
+      </associatedParty>
+      <pubDate>2025-04-30</pubDate>
+      <language>english</language>
+      <abstract>
+         <para>This dataset contains the percentage cover of all stony corals (Scleractinia, pooled among genera) and other major groups analyzed from 0.5 x 0.5 m photographic quadrats at the Backreef habitat at the Moorea Coral Reef LTER, French Polynesia. This survey time series began in 2005 and is repeated each year in April. Functional groups counted are: Scleractinian corals, Macroalgae, Crustose Coralline Algae / Bare Space, Soft Corals, Hydrocorals (        <emphasis>Millepora</emphasis>
+), Algal Turf and Sand. The coral community was sampled photographically in all represented habitats surrounding the island: Fringing Reef, Lagoon, and Outer Reef. This dataset contains only Lagoon (Backreef) data (see knb-lter-mcr.4 for the other habitats) and is structured in a repeated-measures protocol to allow a statistical contrast of sites, shores and times. Community structure was determined through a coarse analysis of the benthic community, initially completed in situ (2005), but using photoquadrats from 2006. There are quadrats analyzed at each of five areas within each site, and the areas are revisited (but not the quadrats) each year to support the repeated measures design. There are two tables available, providing different views of the same data: a long table having all values in one column and a wide table having a separate column for each observed object. Detailed methods are available in the protocols section.</para>
+      </abstract>
+      <keywordSet>
+         <keyword
+        keywordType="theme">Backreef</keyword>
+         <keyword
+        keywordType="theme">LTER</keyword>
+         <keyword
+        keywordType="theme">MCR</keyword>
+         <keyword
+        keywordType="theme">Scleractinian Coral</keyword>
+         <keyword
+        keywordType="place">French Polynesia</keyword>
+         <keyword
+        keywordType="place">Moorea</keyword>
+         <keyword
+        keywordType="taxonomic">Scleractinia</keyword>
+         <keyword
+        keywordType="place">Moorea Coral Reef LTER</keyword>
+      </keywordSet>
+      <keywordSet>
+         <keyword
+        keywordType="theme">California State University Northridge</keyword>
+         <keyword
+        keywordType="theme">Gordon and Betty Moore Foundation</keyword>
+         <keyword
+        keywordType="theme">NSF</keyword>
+         <keyword
+        keywordType="theme">Richard B. Gump South Pacific Research Station</keyword>
+         <keyword
+        keywordType="theme">University of California Santa Barbara</keyword>
+         <keywordThesaurus>Institute, Organization, or Funding Agency</keywordThesaurus>
+      </keywordSet>
+      <keywordSet>
+         <keyword
+        keywordType="taxonomic">animals</keyword>
+         <keyword
+        keywordType="theme">aquatic ecosystems</keyword>
+         <keyword
+        keywordType="theme">biodiversity</keyword>
+         <keyword
+        keywordType="theme">biology</keyword>
+         <keyword
+        keywordType="theme">communities</keyword>
+         <keyword
+        keywordType="theme">community dynamics</keyword>
+         <keyword
+        keywordType="theme">community patterns</keyword>
+         <keyword
+        keywordType="theme">coral reefs</keyword>
+         <keyword
+        keywordType="theme">demography</keyword>
+         <keyword
+        keywordType="theme">ecology</keyword>
+         <keyword
+        keywordType="stratum">habitats</keyword>
+         <keyword
+        keywordType="theme">long term</keyword>
+         <keyword
+        keywordType="theme">long term monitoring</keyword>
+         <keyword
+        keywordType="theme">marine</keyword>
+         <keyword
+        keywordType="theme">monitoring</keyword>
+         <keyword
+        keywordType="theme">oceans</keyword>
+         <keyword
+        keywordType="theme">population dynamics</keyword>
+         <keyword
+        keywordType="theme">populations</keyword>
+         <keyword
+        keywordType="theme">reefs</keyword>
+         <keyword
+        keywordType="taxonomic">species</keyword>
+         <keyword
+        keywordType="theme">species abundance</keyword>
+         <keyword
+        keywordType="taxonomic">species diversity</keyword>
+         <keyword
+        keywordType="taxonomic">species lists</keyword>
+         <keyword
+        keywordType="theme">species richness</keyword>
+         <keyword
+        keywordType="taxonomic">taxonomy</keyword>
+         <keyword
+        keywordType="theme">trophic dynamics</keyword>
+         <keyword
+        keywordType="theme">ocean acidification</keyword>
+         <keyword
+        keywordType="theme">population and community properties</keyword>
+         <keyword
+        keywordType="theme">corals</keyword>
+         <keywordThesaurus>LTER Controlled Vocabulary</keywordThesaurus>
+      </keywordSet>
+      <keywordSet>
+         <keyword
+          keywordType="theme">Populations</keyword>
+         <keywordThesaurus>LTER Core Research Area</keywordThesaurus>
+      </keywordSet>
+      <intellectualRights>
+         <para>This data package is released under the Creative Commons license Attribution 4.0 International (CC BY 4.0 , see</para>
+         <para>The Data User has an ethical obligation to cite the data source appropriately in any publication or product that results from its use, and notify the data contact or creator. Communication, collaboration, or co-authorship (as appropriate) with the creators of this data package is encouraged to prevent duplicate research or publication. The Data User is urged to contact the authors of these data if any questions about methodology or results occur. The Data User should realize that these data may be actively used by others for ongoing research and that coordination may be necessary to prevent duplication or inappropriate use. The Data User should realize that misinterpretation may occur if data are used outside of the context of the original study. The Data User should be aware that data are updated periodically and it is the responsibility of the Data User to check for new versions of the data.</para>
+         <para>While substantial efforts are made to ensure the accuracy of data and associated documentation, complete accuracy of data sets cannot be guaranteed. This data package (with its components) is made available "as is" and with no warranty of accuracy or fitness for use. The creators of this data package and the repository where these data were obtained shall not be liable for any damages resulting from misinterpretation, use or misuse of the data package or its components.</para>
+      </intellectualRights>
+      <distribution>
+         <online>
+            <onlineDescription>MCR LTER site data catalog</onlineDescription>
+            <url
+      function="information">http://mcr.lternet.edu/data/</url>
+         </online>
+      </distribution>
+      <distribution
+      id="10.6073/pasta/4c1177893100125d8e63592a6cb22833" scope="system"
+          system="https://pasta.edirepository.org">
+         <online>
+            <url
+      function="information">https://doi.org/10.6073/pasta/4c1177893100125d8e63592a6cb22833</url>
+         </online>
+      </distribution>
+      <distribution
+      id="10.6073/pasta/444e6b02536bf47fd9b7b99184465e06" scope="system"
+          system="https://pasta.edirepository.org">
+         <online>
+            <url
+      function="information">https://doi.org/10.6073/pasta/444e6b02536bf47fd9b7b99184465e06</url>
+         </online>
+      </distribution>
+      <distribution
+      id="10.6073/pasta/04eb85fb55df96730862f6136dbbee05" scope="system"
+          system="https://pasta.edirepository.org"><online><url
+        function="information">https://doi.org/10.6073/pasta/04eb85fb55df96730862f6136dbbee05</url></online></distribution><coverage>
+         <geographicCoverage
+        id="moorea_generic_box">
+            <geographicDescription>Moorea, French Polynesia</geographicDescription>
+            <boundingCoordinates>
+               <westBoundingCoordinate>-150.00</westBoundingCoordinate>
+               <eastBoundingCoordinate>-149.67</eastBoundingCoordinate>
+               <northBoundingCoordinate>-17.45</northBoundingCoordinate>
+               <southBoundingCoordinate>-17.62</southBoundingCoordinate>
+            </boundingCoordinates>
+         </geographicCoverage>
+         <geographicCoverage
+        id="MCR_LTER_1_poly_for_public">
+            <geographicDescription>LTER 1 polygon including LTER 0 on north shore</geographicDescription>
+            <boundingCoordinates>
+               <westBoundingCoordinate>-149.8455917</westBoundingCoordinate>
+               <eastBoundingCoordinate>-149.829821</eastBoundingCoordinate>
+               <northBoundingCoordinate>-17.47185366</northBoundingCoordinate>
+               <southBoundingCoordinate>-17.48641792</southBoundingCoordinate>
+            </boundingCoordinates>
+         </geographicCoverage>
+         <geographicCoverage
+        id="MCR_LTER_2_poly_for_public">
+            <geographicDescription>LTER 2 polygon on north shore</geographicDescription>
+            <boundingCoordinates>
+               <westBoundingCoordinate>-149.8116849</westBoundingCoordinate>
+               <eastBoundingCoordinate>-149.7961685</eastBoundingCoordinate>
+               <northBoundingCoordinate>-17.46576169</northBoundingCoordinate>
+               <southBoundingCoordinate>-17.48131958</southBoundingCoordinate>
+            </boundingCoordinates>
+         </geographicCoverage>
+         <geographicCoverage
+        id="MCR_LTER_3_poly_for_public">
+            <geographicDescription>LTER 3 polygon on southeast shore</geographicDescription>
+            <boundingCoordinates>
+               <westBoundingCoordinate>-149.7708619</westBoundingCoordinate>
+               <eastBoundingCoordinate>-149.7519968</eastBoundingCoordinate>
+               <northBoundingCoordinate>-17.50382025</northBoundingCoordinate>
+               <southBoundingCoordinate>-17.52087158</southBoundingCoordinate>
+            </boundingCoordinates>
+         </geographicCoverage>
+         <geographicCoverage
+        id="MCR_LTER_4_poly_for_public">
+            <geographicDescription>LTER 4 polygon on southeast shore</geographicDescription>
+            <boundingCoordinates>
+               <westBoundingCoordinate>-149.7772857</westBoundingCoordinate>
+               <eastBoundingCoordinate>-149.7566866</eastBoundingCoordinate>
+               <northBoundingCoordinate>-17.53305021</northBoundingCoordinate>
+               <southBoundingCoordinate>-17.55064263</southBoundingCoordinate>
+            </boundingCoordinates>
+         </geographicCoverage>
+         <geographicCoverage
+        id="MCR_LTER_5_poly_for_public">
+            <geographicDescription>LTER 5 polygon on southwest shore</geographicDescription>
+            <boundingCoordinates>
+               <westBoundingCoordinate>-149.8869755</westBoundingCoordinate>
+               <eastBoundingCoordinate>-149.8561009</eastBoundingCoordinate>
+               <northBoundingCoordinate>-17.56818162</northBoundingCoordinate>
+               <southBoundingCoordinate>-17.59182383</southBoundingCoordinate>
+            </boundingCoordinates>
+         </geographicCoverage>
+         <geographicCoverage
+        id="MCR_LTER_6_poly_for_public">
+            <geographicDescription>LTER 6 polygon on southwest shore</geographicDescription>
+            <boundingCoordinates>
+               <westBoundingCoordinate>-149.934537</westBoundingCoordinate>
+               <eastBoundingCoordinate>-149.9115336</eastBoundingCoordinate>
+               <northBoundingCoordinate>-17.50735955</northBoundingCoordinate>
+               <southBoundingCoordinate>-17.52839766</southBoundingCoordinate>
+            </boundingCoordinates>
+         </geographicCoverage>
+         <temporalCoverage>
+            <rangeOfDates>
+               <beginDate>
+                  <calendarDate>2005-04-01</calendarDate>
+               </beginDate>
+               <endDate>
+                  <calendarDate>2024-04-08</calendarDate>
+               </endDate>
+            </rangeOfDates>
+         </temporalCoverage>
+         <taxonomicCoverage>
+            <taxonomicClassification>
+               <taxonRankName>Phylum</taxonRankName>
+               <taxonRankValue>Cnidaria</taxonRankValue>
+               <taxonomicClassification>
+                  <taxonRankName>Class</taxonRankName>
+                  <taxonRankValue>Anthozoa</taxonRankValue>
+                  <taxonomicClassification>
+                     <taxonRankName>Order</taxonRankName>
+                     <taxonRankValue>Corallimorpharia</taxonRankValue>
+                  </taxonomicClassification>
+                  <taxonomicClassification>
+                     <taxonRankName>Order</taxonRankName>
+                     <taxonRankValue>Scleractinia</taxonRankValue>
+                     <taxonomicClassification>
+                        <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Acroporidae</taxonRankValue>
+                        <taxonomicClassification>
+                           <taxonRankName>Genus</taxonRankName>
+                           <taxonRankValue>Acropora</taxonRankValue>
+                        </taxonomicClassification>
+                        <taxonomicClassification>
+                           <taxonRankName>Genus</taxonRankName>
+                           <taxonRankValue>Astreopora</taxonRankValue>
+                        </taxonomicClassification>
+                        <taxonomicClassification>
+                           <taxonRankName>Genus</taxonRankName>
+                           <taxonRankValue>Montipora</taxonRankValue>
+                        </taxonomicClassification>
+                     </taxonomicClassification>
+                     <taxonomicClassification>
+                        <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Agariciidae</taxonRankValue>
+                        <taxonomicClassification>
+                           <taxonRankName>Genus</taxonRankName>
+                           <taxonRankValue>Gardinoseris</taxonRankValue>
+                        </taxonomicClassification>
+                        <taxonomicClassification>
+                           <taxonRankName>Genus</taxonRankName>
+                           <taxonRankValue>Leptoseris</taxonRankValue>
+                        </taxonomicClassification>
+                        <taxonomicClassification>
+                           <taxonRankName>Genus</taxonRankName>
+                           <taxonRankValue>Pachyseris</taxonRankValue>
+                        </taxonomicClassification>
+                        <taxonomicClassification>
+                           <taxonRankName>Genus</taxonRankName>
+                           <taxonRankValue>Pavona</taxonRankValue>
+                        </taxonomicClassification>
+                     </taxonomicClassification>
+                     <taxonomicClassification>
+                        <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Astrocoeniidae</taxonRankValue>
+                        <taxonomicClassification>
+                           <taxonRankName>Genus</taxonRankName>
+                           <taxonRankValue>Stylocoeniella</taxonRankValue>
+                        </taxonomicClassification>
+                     </taxonomicClassification>
+                     <taxonomicClassification>
+                        <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Dendrophyllidae</taxonRankValue>
+                        <taxonomicClassification>
+                           <taxonRankName>Genus</taxonRankName>
+                           <taxonRankValue>Tubastrea</taxonRankValue>
+                        </taxonomicClassification>
+                     </taxonomicClassification>
+                     <taxonomicClassification>
+                        <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Faviidae</taxonRankValue>
+                        <taxonomicClassification>
+                           <taxonRankName>Genus</taxonRankName>
+                           <taxonRankValue>Cyphastrea</taxonRankValue>
+                        </taxonomicClassification>
+                        <taxonomicClassification>
+                           <taxonRankName>Genus</taxonRankName>
+                           <taxonRankValue>Favia</taxonRankValue>
+                        </taxonomicClassification>
+                        <taxonomicClassification>
+                           <taxonRankName>Genus</taxonRankName>
+                           <taxonRankValue>Leptastrea</taxonRankValue>
+                        </taxonomicClassification>
+                        <taxonomicClassification>
+                           <taxonRankName>Genus</taxonRankName>
+                           <taxonRankValue>Montastrea</taxonRankValue>
+                        </taxonomicClassification>
+                     </taxonomicClassification>
+                     <taxonomicClassification>
+                        <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Fungiidae</taxonRankValue>
+                        <taxonomicClassification>
+                           <taxonRankName>Genus</taxonRankName>
+                           <taxonRankValue>Fungia</taxonRankValue>
+                        </taxonomicClassification>
+                        <taxonomicClassification>
+                           <taxonRankName>Genus</taxonRankName>
+                           <taxonRankValue>Herpolitha</taxonRankValue>
+                        </taxonomicClassification>
+                        <taxonomicClassification>
+                           <taxonRankName>Genus</taxonRankName>
+                           <taxonRankValue>Sandolitha</taxonRankValue>
+                        </taxonomicClassification>
+                     </taxonomicClassification>
+                     <taxonomicClassification>
+                        <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Mussidae</taxonRankValue>
+                        <taxonomicClassification>
+                           <taxonRankName>Genus</taxonRankName>
+                           <taxonRankValue>Acanthastrea</taxonRankValue>
+                        </taxonomicClassification>
+                        <taxonomicClassification>
+                           <taxonRankName>Genus</taxonRankName>
+                           <taxonRankValue>Lobophyllia</taxonRankValue>
+                        </taxonomicClassification>
+                     </taxonomicClassification>
+                     <taxonomicClassification>
+                        <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Pocilloporidae</taxonRankValue>
+                        <taxonomicClassification>
+                           <taxonRankName>Genus</taxonRankName>
+                           <taxonRankValue>Pocillopora</taxonRankValue>
+                        </taxonomicClassification>
+                     </taxonomicClassification>
+                     <taxonomicClassification>
+                        <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Poritidae</taxonRankValue>
+                        <taxonomicClassification>
+                           <taxonRankName>Genus</taxonRankName>
+                           <taxonRankValue>Porites</taxonRankValue>
+                           <taxonomicClassification>
+                              <taxonRankName>Species</taxonRankName>
+                              <taxonRankValue>Porites irregularis</taxonRankValue>
+                           </taxonomicClassification>
+                           <taxonomicClassification>
+                              <taxonRankName>Species</taxonRankName>
+                              <taxonRankValue>Porites rus</taxonRankValue>
+                           </taxonomicClassification>
+                           <taxonomicClassification>
+                              <taxonRankName>Species</taxonRankName>
+                              <taxonRankValue>Porites spp. Massive</taxonRankValue>
+                           </taxonomicClassification>
+                        </taxonomicClassification>
+                     </taxonomicClassification>
+                     <taxonomicClassification>
+                        <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Siderastreidae</taxonRankValue>
+                        <taxonomicClassification>
+                           <taxonRankName>Genus</taxonRankName>
+                           <taxonRankValue>Psammacora</taxonRankValue>
+                        </taxonomicClassification>
+                     </taxonomicClassification>
+                  </taxonomicClassification>
+               </taxonomicClassification>
+               <taxonomicClassification>
+                  <taxonRankName>Class</taxonRankName>
+                  <taxonRankValue>Hydrozoa</taxonRankValue>
+                  <taxonomicClassification>
+                     <taxonRankName>Order</taxonRankName>
+                     <taxonRankValue>Hyroida</taxonRankValue>
+                     <taxonomicClassification>
+                        <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Milleporidae</taxonRankValue>
+                        <taxonomicClassification>
+                           <taxonRankName>Genus</taxonRankName>
+                           <taxonRankValue>Millepora</taxonRankValue>
+                        </taxonomicClassification>
+                     </taxonomicClassification>
+                  </taxonomicClassification>
+               </taxonomicClassification>
+            </taxonomicClassification>
+         </taxonomicCoverage>
+      </coverage>
+      <maintenance>
+         <description>
+            <para>This is an ongoing dataset. Data are added annually.</para>
+         </description>
+         <maintenanceUpdateFrequency>annually</maintenanceUpdateFrequency>
+      </maintenance>
+      <contact>
+         <organizationName>MCR LTER</organizationName>
+         <positionName>Information Manager</positionName>
+         <address>
+            <deliveryPoint>UC Santa Barbara, Marine Science Institute, Building 520</deliveryPoint>
+            <deliveryPoint>University of California</deliveryPoint>
+            <city>Santa Barbara</city>
+            <administrativeArea>CA</administrativeArea>
+            <postalCode>93106-6150</postalCode>
+            <country>United States</country>
+         </address>
+         <phone
+        phonetype="voice">805.893.2071</phone>
+         <electronicMailAddress>hkrumbholz@ucsb.edu</electronicMailAddress>
+         <onlineUrl>https://mcr.lternet.edu/</onlineUrl>
+      </contact>
+      <publisher>
+         <organizationName>Environmental Data Initiative</organizationName>
+         <electronicMailAddress>info@edirepository.org</electronicMailAddress>
+         <onlineUrl>https://edirepository.org</onlineUrl>
+         <userId
+          directory="https://ror.org">0330j0z60</userId>
+      </publisher>
+      <pubPlace>Environmental Data Initiative</pubPlace>
+      <methods>
+         <methodStep>
+            <description>
+               <section>
+                  <title>Photoquadrats</title>
+                  <para>Quantitative high resolution digital images form 2006-present (              <emphasis>in situ</emphasis>
+counts in 2005).</para>
+               </section>
+               <section>
+                  <title>Sampling</title>
+                  <para>The sampling strategy was designed to facilitate tests of the effect of time and shore on the coral community structure of the backreef habitats of Moorea. The backreef habitat within the lagoon and may be synonymous with lagoon habitats in other studies. The sampling design was implemented to accommodate the high spatial variation in the lagoon, and therefore quadrats along a transect were not employed. Instead, each site was characterized by 5 randomly selected patches over a spatial scale of ~50m. At each point, a cardinal axis design was implemented where quadrats were sampled along N, S, E and W axes centered on each patch. Each axis was 5 m long, and 5 quadrats (0.5 x 0.5 m) were scattered randomly along the axis; the position is re-randomized each year. This design is a nested, factorial ANOVA experimental design in which shore of Moorea (north, southeast, or southwest) was treated as a fixed factor, site (LTER 1 through LTER 6) as a random factor nested within shore, and time was a repeated measures factor based on five patches at each site. Depending on the analytical goals, the community structure at each patch can be characterized by averaging all 20 quadrats, or the quadrats can be treated as a nested factor in each patch.</para>
+                  <para>The census methods were designed to quantify coral community structure in terms of the dominant constituents of the benthic community - scleractinian corals, macroalgae, crustose coralline algae, sand, algal turf, and Millepora. The benthos is recorded with digital images every year and the resolution of the images generally increases across the study as the resolution of DSLR cameras has increased with time. 2020 was an unusual year when sampling was perturbed by the COVID pandemic. This year, lower resolution images were taken with a GoPro camera in late August.</para>
+                  <para>QA/QC of the data in April 2021 revealed ongoing challenges of accurately distinguishing among algal turf, crustose coralline algae, and bare space, and therefore, the categories were combined across the whole study to “CTB” (summation of the three categories). These groups are resolved in data set (knb.lter.mcr.8) which describes the results of surveys conducted in situ by RC Carpenter.</para>
+                  <para>All census methods were designed to quantify coral community structure in terms of the dominant constituents of the benthic community - scleractinian corals, macroalgae, crustose coralline algae, sand, algal turf, and millepora.</para>
+               </section>
+               <section>
+                  <title>Parameters for Photoquadrat Analysis</title>
+                  <para>For the purpose of analysis of the benthic community, the quadrats are divided into 25 equal squares (5 x 5 cm) and each square is scored for the benthic category (one of 6 categories as above) that dominates (i.e., ≥ 50% cover) that area. The limit of resolution is 4% change in cover. Identification has been done by various graduate students and technicians and the investigator. The images can be analyzed for coral cover at the genus level (as is accomplished in the outer reef and fringe habitats), but currently this analysis is incomplete for the back reef (2008 and 2009 are available).</para>
+               </section>
+            </description>
+         </methodStep>
+         <methodStep>
+            <description>
+               <section>
+                  <title>Blue Water</title>
+                  <para>The backreef habitat in the lagoons is relatively shallow. There is a minimum depth needed to position the camera frame over corals and still be under water. When a quadrat is too shallow, the photo may be tilted off horizontal so that part of the photo is open water, called "blue water", instead of benthic cover. This makes the photoquadrat inappropriate for percent cover analysis. For these photoquadrats the code "BW" is entered in place of coral cover percent.</para>
+               </section>
+            </description>
+         </methodStep>
+      </methods>
+      <project>
+         <title>The Moorea Coral Reef (MCR) LTER</title>
+         <personnel>
+            <individualName>
+               <givenName>Russell</givenName>
+               <surName>Schmitt</surName>
+            </individualName>
+            <organizationName>Moorea Coral Reef LTER</organizationName>
+            <positionName>Lead Principal Investigator</positionName>
+            <address>
+               <deliveryPoint>Marine Science Institute</deliveryPoint>
+               <deliveryPoint>University of California</deliveryPoint>
+               <city>Santa Barbara</city>
+               <administrativeArea>CA</administrativeArea>
+               <postalCode>93106-6150</postalCode>
+               <country>USA</country>
+            </address>
+            <electronicMailAddress>schmitt@lifesci.ucsb.edu</electronicMailAddress>
+            <onlineUrl>http://mcr.lternet.edu/people/russell-j-schmitt</onlineUrl>
+            <userId
+          directory="https://orcid.org">0000-0002-9674-4244</userId>
+            <role>Principal Investigator</role>
+         </personnel>
+         <personnel>
+            <individualName>
+               <givenName>Sally</givenName>
+               <surName>Holbrook</surName>
+            </individualName>
+            <organizationName>Moorea Coral Reef LTER</organizationName>
+            <positionName>Principal Investigator</positionName>
+            <address>
+               <deliveryPoint>Marine Science Institute</deliveryPoint>
+               <deliveryPoint>University of California</deliveryPoint>
+               <city>Santa Barbara</city>
+               <administrativeArea>CA</administrativeArea>
+               <postalCode>93106-6150</postalCode>
+               <country>USA</country>
+            </address>
+            <electronicMailAddress>holbrook@lifesci.ucsb.edu</electronicMailAddress>
+            <onlineUrl>http://mcr.lternet.edu/people/sally-holbrook</onlineUrl>
+            <userId
+          directory="https://orcid.org">0000-0002-3015-3484</userId>
+            <role>Principal Investigator</role>
+         </personnel>
+         <personnel>
+            <individualName>
+               <givenName>Peter</givenName>
+               <surName>Edmunds</surName>
+            </individualName>
+            <organizationName>Moorea Coral Reef LTER</organizationName>
+            <positionName>Principal Investigator</positionName>
+            <address>
+               <deliveryPoint>Department of Biological Sciences, California State University</deliveryPoint>
+               <deliveryPoint>18111 Nordhoff Street</deliveryPoint>
+               <city>Northridge</city>
+               <administrativeArea>CA</administrativeArea>
+               <postalCode>91330-8303</postalCode>
+               <country>USA</country>
+            </address>
+            <phone
+          phonetype="voice">818.677.2502</phone>
+            <electronicMailAddress>peter.edmunds@csun.edu</electronicMailAddress>
+            <onlineUrl>http://mcr.lternet.edu/people/peter-edmunds</onlineUrl>
+            <userId
+          directory="https://orcid.org">0000-0002-9039-9347</userId>
+            <role>Principal Investigator</role>
+         </personnel>
+         <personnel>
+            <individualName>
+               <givenName>Robert</givenName>
+               <surName>Carpenter</surName>
+            </individualName>
+            <organizationName>Moorea Coral Reef LTER</organizationName>
+            <positionName>Principal Investigator</positionName>
+            <address>
+               <deliveryPoint>Department of Biological Sciences, California State University</deliveryPoint>
+               <deliveryPoint>18111 Nordhoff Street</deliveryPoint>
+               <city>Northridge</city>
+               <administrativeArea>CA</administrativeArea>
+               <postalCode>91330-8303</postalCode>
+               <country>USA</country>
+            </address>
+            <phone
+          phonetype="voice">818-677-3256</phone>
+            <electronicMailAddress>robert.carpenter@csun.edu</electronicMailAddress>
+            <onlineUrl>http://mcr.lternet.edu/people/robert-carpenter</onlineUrl>
+            <userId
+          directory="https://orcid.org">0000-0003-4232-1868</userId>
+            <role>Principal Investigator</role>
+         </personnel>
+         <personnel>
+            <individualName>
+               <givenName>Deron</givenName>
+               <surName>Burkepile</surName>
+            </individualName>
+            <organizationName>Moorea Coral Reef LTER</organizationName>
+            <positionName>Principle Investigator</positionName>
+            <address>
+               <deliveryPoint>Marine Science Institute, University of California,</deliveryPoint>
+               <city>Santa Barbara</city>
+               <administrativeArea>CA</administrativeArea>
+               <postalCode>93106-6150</postalCode>
+               <country>United States</country>
+            </address>
+            <electronicMailAddress>dburkepile@ucsb.edu</electronicMailAddress>
+            <userId
+      directory="https://orcid.org">0000-0002-0427-0484</userId>
+            <role>Co-Principle Investigator</role>
+         </personnel>
+         <abstract>
+            <para>This material uses data collected by the U.S. National Science Foundation's (NSF) Moorea Coral Reef Long Term Ecological Research (MCR LTER) site under Grant No. OCE 2224354 (and earlier awards). Additional financial support to the MCR LTER site was provided through a generous gift from the Gordon and Betty Moore Foundation. Research was completed under permits issued by the French Polynesian Government (Délégation à la Recherche) and the Haut-commissariat de la République en Polynésie Francaise (DTRT) (Protocole d'Accueil 2005-2025).</para>
+            <para/>
+            <para>With respect to the spelling of Moorea, we followed the Raapoto transcription system that is adhered to by a large segment of the Tahitian community but also recognizes other community members follow the Te Fare Vāna’a transcription system where the island name is spelled with an ’eta (Mo’orea).</para>
+         </abstract>
+         <funding>
+            <para>NSF (LTER) MCR I #OCE-0417412, MCR II #OCE-1026851, MCR IIb #OCE-1236905, MCR III #OCE-1637396, and MCR IV #OCE-2224354</para>
+         </funding>
+      </project>
+      <dataTable
+      id="b7ca625d17a5630441af8c229cc0ab92" scope="document"
+          system="https://pasta.edirepository.org">
+         <entityName>Percent cover as wide table</entityName>
+         <entityDescription>Photoquadrat analysis results: Percent cover of benthic taxa inlcuding corals by groups of genera. This table contains the same data as the long-format table, reformatted into wide-format.</entityDescription>
+         <physical>
+            <objectName>MCR_LTER_Coral_Cover_Backreef_Wide_20250429.csv</objectName>
+            <size
+          unit="byte">542437</size>
+            <authentication
+              method="MD5">f35d6b3ea59930d82ea84e7561eb9e46</authentication>
+            <dataFormat>
+               <textFormat>
+                  <numHeaderLines>1</numHeaderLines>
+                  <recordDelimiter>\r\n</recordDelimiter>
+                  <attributeOrientation>column</attributeOrientation>
+                  <simpleDelimited>
+                     <fieldDelimiter>,</fieldDelimiter>
+                     <quoteCharacter>"</quoteCharacter>
+                  </simpleDelimited>
+               </textFormat>
+            </dataFormat>
+            <distribution>
+               <online>
+                  <url
+            function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-mcr/1038/14/b7ca625d17a5630441af8c229cc0ab92</url>
+               </online>
+            </distribution>
+         </physical>
+         <attributeList>
+            <attribute>
+               <attributeName>year</attributeName>
+               <attributeLabel>Year</attributeLabel>
+               <attributeDefinition>Year of Observation. Annual surveys are between April 1 to May 15 of each year.</attributeDefinition>
+               <storageType
+          typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">integer</storageType>
+               <measurementScale>
+                  <dateTime>
+                     <formatString>YYYY</formatString>
+                     <dateTimePrecision>1</dateTimePrecision>
+                     <dateTimeDomain/>
+                  </dateTime>
+               </measurementScale>
+            </attribute>
+            <attribute
+            id="wide.site">
+               <attributeName>site</attributeName>
+               <attributeLabel>Site ID</attributeLabel>
+               <attributeDefinition>Number part of site ID.</attributeDefinition>
+               <storageType
+                  typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">integer</storageType>
+               <measurementScale>
+                  <nominal>
+                     <nonNumericDomain>
+                        <enumeratedDomain
+          enforced="yes">
+                           <codeDefinition>
+                              <code>LTER_1</code>
+                              <definition>LTER 1 - located on North shore</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>LTER_2</code>
+                              <definition>LTER 2 - located on North shore</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>LTER_3</code>
+                              <definition>LTER 3 - located on East side</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>LTER_4</code>
+                              <definition>LTER 4 - located on East side</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>LTER_5</code>
+                              <definition>LTER 5 - located on West side</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>LTER_6</code>
+                              <definition>LTER 6 - located on West side</definition>
+                           </codeDefinition>
+                        </enumeratedDomain>
+                     </nonNumericDomain>
+                  </nominal>
+               </measurementScale>
+            </attribute>
+            <attribute
+            id="wide.habitat">
+               <attributeName>habitat</attributeName>
+               <attributeLabel>habitat</attributeLabel>
+               <attributeDefinition>Habitat type</attributeDefinition>
+               <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+               <measurementScale>
+                  <nominal>
+                     <nonNumericDomain>
+                        <enumeratedDomain
+          enforced="yes">
+                           <codeDefinition>
+                              <code>Backreef</code>
+                              <definition>Backreef - located in the lagoon</definition>
+                           </codeDefinition>
+                        </enumeratedDomain>
+                     </nonNumericDomain>
+                  </nominal>
+               </measurementScale>
+            </attribute>
+            <attribute
+            id="wide.depth">
+               <attributeName>depth</attributeName>
+               <attributeLabel>depth</attributeLabel>
+               <attributeDefinition>Depth of transect</attributeDefinition>
+               <storageType
+          typeSystem="XML Schema Datatypes">float</storageType>
+               <measurementScale>
+                  <ratio>
+                     <unit>
+                        <standardUnit>meter</standardUnit>
+                     </unit>
+                     <numericDomain>
+                        <numberType>real</numberType>
+                     </numericDomain>
+                  </ratio>
+               </measurementScale>
+            </attribute>
+            <attribute
+            id="wide.quad">
+               <attributeName>quad</attributeName>
+               <attributeLabel>Quadrat ID</attributeLabel>
+               <attributeDefinition>Quadrat ID. Quadrats are numbered either sequentially or on a north, south, east, west plus-sign orientation.</attributeDefinition>
+               <storageType
+          typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">string</storageType>
+               <measurementScale>
+                  <nominal>
+                     <nonNumericDomain>
+                        <textDomain>
+                           <definition>text</definition>
+                        </textDomain>
+                     </nonNumericDomain>
+                  </nominal>
+               </measurementScale>
+            </attribute>
+            <attribute
+            id="wide.patch">
+               <attributeName>patch</attributeName>
+               <attributeLabel>Patch ID</attributeLabel>
+               <attributeDefinition>Patch ID number. A patch is analogous to a transect. Each site has 5 patches.</attributeDefinition>
+               <storageType
+                  typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">integer</storageType>
+               <measurementScale>
+                  <nominal>
+                     <nonNumericDomain>
+                        <enumeratedDomain
+            enforced="yes">
+                           <codeDefinition>
+                              <code>1</code>
+                              <definition>Patch 1</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>2</code>
+                              <definition>Patch 2</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>3</code>
+                              <definition>Patch 3</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>4</code>
+                              <definition>Patch 4</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>5</code>
+                              <definition>Patch 5</definition>
+                           </codeDefinition>
+                        </enumeratedDomain>
+                     </nonNumericDomain>
+                  </nominal>
+               </measurementScale>
+            </attribute>
+            <attribute>
+               <attributeName>coral</attributeName>
+               <attributeLabel>Percent Stony Coral</attributeLabel>
+               <attributeDefinition>Percent cover of Stony Coral in photoquadrat. Stony Coral is the sum of Acanthastrea, Acropora, Astreopora, Cyphastrea, Favia, Fungia, Gardinoseris, Herpolitha, Leptastrea, Leptoseris, Lobophyllia, Montastrea, Montipora, Pachyseris, Pavona, Pocillopora, Porites, Psammacora, Sandolitha, Stylocoeniella and Tubastrea.</attributeDefinition>
+               <storageType
+                    typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">double precision</storageType>
+               <measurementScale>
+                  <ratio>
+                     <unit>
+                        <standardUnit>percent</standardUnit>
+                     </unit>
+                     <precision>1</precision>
+                     <numericDomain>
+                        <numberType>real</numberType>
+                        <bounds>
+                           <minimum
+                    exclusive="true">0</minimum>
+                           <maximum
+            exclusive="false">100</maximum>
+                        </bounds>
+                     </numericDomain>
+                  </ratio>
+               </measurementScale>
+               <missingValueCode>
+                  <code>na</code>
+                  <codeExplanation>Not available</codeExplanation>
+               </missingValueCode>
+               <missingValueCode>
+                  <code>BW</code>
+                  <codeExplanation>Blue Water. See methods section.</codeExplanation>
+               </missingValueCode>
+            </attribute>
+            <attribute>
+               <attributeName>macroalgae</attributeName>
+               <attributeLabel>Percent Macroalgae</attributeLabel>
+               <attributeDefinition>Percent cover of Macroalgae in photoquadrat. Macroalgae is a functional group.</attributeDefinition>
+               <storageType
+                    typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">double precision</storageType>
+               <measurementScale>
+                  <ratio>
+                     <unit>
+                        <standardUnit>percent</standardUnit>
+                     </unit>
+                     <precision>1</precision>
+                     <numericDomain>
+                        <numberType>real</numberType>
+                        <bounds>
+                           <minimum
+                    exclusive="true">0</minimum>
+                           <maximum
+            exclusive="false">100</maximum>
+                        </bounds>
+                     </numericDomain>
+                  </ratio>
+               </measurementScale>
+               <missingValueCode>
+                  <code>na</code>
+                  <codeExplanation>Not available</codeExplanation>
+               </missingValueCode>
+               <missingValueCode>
+                  <code>BW</code>
+                  <codeExplanation>Blue Water. See methods section.</codeExplanation>
+               </missingValueCode>
+            </attribute>
+            <attribute>
+               <attributeName>sand</attributeName>
+               <attributeLabel>Percent Sand</attributeLabel>
+               <attributeDefinition>Percent cover of Sand in photoquadrat. Sand is a substrate.</attributeDefinition>
+               <storageType
+                    typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">double precision</storageType>
+               <measurementScale>
+                  <ratio>
+                     <unit>
+                        <standardUnit>percent</standardUnit>
+                     </unit>
+                     <precision>1</precision>
+                     <numericDomain>
+                        <numberType>real</numberType>
+                        <bounds>
+                           <minimum
+                    exclusive="true">0</minimum>
+                           <maximum
+            exclusive="false">100</maximum>
+                        </bounds>
+                     </numericDomain>
+                  </ratio>
+               </measurementScale>
+               <missingValueCode>
+                  <code>na</code>
+                  <codeExplanation>Not available</codeExplanation>
+               </missingValueCode>
+               <missingValueCode>
+                  <code>BW</code>
+                  <codeExplanation>Blue Water. See methods section.</codeExplanation>
+               </missingValueCode>
+            </attribute>
+            <attribute>
+               <attributeName>millepora</attributeName>
+               <attributeLabel>Percent Millepora</attributeLabel>
+               <attributeDefinition>Percent cover of Millipora in photoquadrat. Millipora is a genus of Hydrocoral.</attributeDefinition>
+               <storageType
+                    typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">double precision</storageType>
+               <measurementScale>
+                  <ratio>
+                     <unit>
+                        <standardUnit>percent</standardUnit>
+                     </unit>
+                     <precision>1</precision>
+                     <numericDomain>
+                        <numberType>real</numberType>
+                        <bounds>
+                           <minimum
+                    exclusive="true">0</minimum>
+                           <maximum
+            exclusive="false">100</maximum>
+                        </bounds>
+                     </numericDomain>
+                  </ratio>
+               </measurementScale>
+               <missingValueCode>
+                  <code>na</code>
+                  <codeExplanation>Not available</codeExplanation>
+               </missingValueCode>
+               <missingValueCode>
+                  <code>BW</code>
+                  <codeExplanation>Blue Water. See methods section.</codeExplanation>
+               </missingValueCode>
+            </attribute>
+            <attribute>
+               <attributeName>ctb</attributeName>
+               <attributeLabel>Percent Crustose Coralline Algae / Bare Space / Turf</attributeLabel>
+               <attributeDefinition>Percent cover of Crustose Coralline Algae or Bare Space or Turf in photoquadrat. Crustose Coralline Algae / Bare Space / Turf is a functional group.</attributeDefinition>
+               <storageType
+                    typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">double precision</storageType>
+               <measurementScale>
+                  <ratio>
+                     <unit>
+                        <standardUnit>percent</standardUnit>
+                     </unit>
+                     <precision>1</precision>
+                     <numericDomain>
+                        <numberType>real</numberType>
+                        <bounds>
+                           <minimum
+                    exclusive="true">0</minimum>
+                           <maximum
+            exclusive="false">100</maximum>
+                        </bounds>
+                     </numericDomain>
+                  </ratio>
+               </measurementScale>
+               <missingValueCode>
+                  <code>na</code>
+                  <codeExplanation>Not available</codeExplanation>
+               </missingValueCode>
+               <missingValueCode>
+                  <code>BW</code>
+                  <codeExplanation>Blue Water. See methods section.</codeExplanation>
+               </missingValueCode>
+            </attribute>
+            <attribute>
+               <attributeName>sub_squares</attributeName>
+               <attributeLabel>Sub-squares counted</attributeLabel>
+               <attributeDefinition>Number of square sub-divisions of the quadrat counted. Normally 25, unless sub-squares fell on uncategorized classes. Each class was divided by this total count to get fraction, or x100 to get percent cover.</attributeDefinition>
+               <storageType
+          typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">integer</storageType>
+               <measurementScale>
+                  <ratio>
+                     <unit>
+                        <standardUnit>number</standardUnit>
+                     </unit>
+                     <numericDomain>
+                        <numberType>integer</numberType>
+                     </numericDomain>
+                  </ratio>
+               </measurementScale>
+            </attribute>
+            <attribute
+            id="wide.note">
+               <attributeName>note</attributeName>
+               <attributeLabel>Comment</attributeLabel>
+               <attributeDefinition>Any unusual circumstances.</attributeDefinition>
+               <storageType
+      typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">string</storageType>
+               <measurementScale>
+                  <nominal>
+                     <nonNumericDomain>
+                        <textDomain>
+                           <definition>text</definition>
+                        </textDomain>
+                     </nonNumericDomain>
+                  </nominal>
+               </measurementScale>
+               <missingValueCode>
+                  <code>na</code>
+                  <codeExplanation>No note</codeExplanation>
+               </missingValueCode>
+            </attribute>
+         </attributeList>
+         <caseSensitive>no</caseSensitive>
+         <numberOfRecords>11146</numberOfRecords>
+      </dataTable>
+      <dataTable
+      id="6ed52e44bcd4d0360d2f95d24674204c" scope="document"
+          system="https://pasta.edirepository.org">
+         <entityName>Percent cover as long table</entityName>
+         <entityDescription>Photoquadrat analysis results: Percent cover of benthic taxa, grouping genera of corals.</entityDescription>
+         <physical>
+            <objectName>MCR_LTER_Coral_Cover_Backreef_Long_20250429.csv</objectName>
+            <size
+          unit="byte">2192701</size>
+            <authentication
+              method="MD5">64d937e3f8716747d6f1c3cd0bb02a4f</authentication>
+            <dataFormat>
+               <textFormat>
+                  <numHeaderLines>1</numHeaderLines>
+                  <recordDelimiter>\r\n</recordDelimiter>
+                  <attributeOrientation>column</attributeOrientation>
+                  <simpleDelimited>
+                     <fieldDelimiter>,</fieldDelimiter>
+                     <quoteCharacter>"</quoteCharacter>
+                  </simpleDelimited>
+               </textFormat>
+            </dataFormat>
+            <distribution>
+               <online>
+                  <url
+            function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-mcr/1038/14/6ed52e44bcd4d0360d2f95d24674204c</url>
+               </online>
+            </distribution>
+         </physical>
+         <attributeList>
+            <attribute>
+               <attributeName>year</attributeName>
+               <attributeLabel>Year</attributeLabel>
+               <attributeDefinition>Year of Observation. Annual surveys are between April 1 to May 15 of each year.</attributeDefinition>
+               <storageType
+          typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">integer</storageType>
+               <measurementScale>
+                  <dateTime>
+                     <formatString>YYYY</formatString>
+                     <dateTimePrecision>1</dateTimePrecision>
+                     <dateTimeDomain/>
+                  </dateTime>
+               </measurementScale>
+            </attribute>
+            <attribute
+            id="long.site">
+               <attributeName>site</attributeName>
+               <attributeLabel>Site ID</attributeLabel>
+               <attributeDefinition>Number part of site ID.</attributeDefinition>
+               <storageType
+                  typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">integer</storageType>
+               <measurementScale>
+                  <nominal>
+                     <nonNumericDomain>
+                        <enumeratedDomain
+          enforced="yes">
+                           <codeDefinition>
+                              <code>LTER_1</code>
+                              <definition>LTER 1 - located on North shore</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>LTER_2</code>
+                              <definition>LTER 2 - located on North shore</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>LTER_3</code>
+                              <definition>LTER 3 - located on East side</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>LTER_4</code>
+                              <definition>LTER 4 - located on East side</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>LTER_5</code>
+                              <definition>LTER 5 - located on West side</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>LTER_6</code>
+                              <definition>LTER 6 - located on West side</definition>
+                           </codeDefinition>
+                        </enumeratedDomain>
+                     </nonNumericDomain>
+                  </nominal>
+               </measurementScale>
+            </attribute>
+            <attribute
+            id="long.habitat">
+               <attributeName>habitat</attributeName>
+               <attributeLabel>habitat</attributeLabel>
+               <attributeDefinition>Habitat type</attributeDefinition>
+               <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+               <measurementScale>
+                  <nominal>
+                     <nonNumericDomain>
+                        <enumeratedDomain
+          enforced="yes">
+                           <codeDefinition>
+                              <code>Backreef</code>
+                              <definition>Backreef - located in the lagoon</definition>
+                           </codeDefinition>
+                        </enumeratedDomain>
+                     </nonNumericDomain>
+                  </nominal>
+               </measurementScale>
+            </attribute>
+            <attribute
+            id="long.depth">
+               <attributeName>depth</attributeName>
+               <attributeLabel>depth</attributeLabel>
+               <attributeDefinition>Depth of transect</attributeDefinition>
+               <storageType
+          typeSystem="XML Schema Datatypes">float</storageType>
+               <measurementScale>
+                  <ratio>
+                     <unit>
+                        <standardUnit>meter</standardUnit>
+                     </unit>
+                     <numericDomain>
+                        <numberType>real</numberType>
+                     </numericDomain>
+                  </ratio>
+               </measurementScale>
+            </attribute>
+            <attribute
+            id="long.quad">
+               <attributeName>quad</attributeName>
+               <attributeLabel>Quadrat ID</attributeLabel>
+               <attributeDefinition>Quadrat number identifies the quadrat. Some quadrats are laid out in a N-S-E-W cross; other patches have quadrats 1 to 10, others 1 to 20.</attributeDefinition>
+               <storageType
+                  typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">string</storageType>
+               <measurementScale>
+                  <nominal>
+                     <nonNumericDomain>
+                        <enumeratedDomain
+          enforced="yes">
+                           <codeDefinition>
+                              <code>E1</code>
+                              <definition>Quad E1</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>E11</code>
+                              <definition>Quad E11</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>E12</code>
+                              <definition>Quad E12</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>E13</code>
+                              <definition>Quad E13</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>E14</code>
+                              <definition>Quad E14</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>E15</code>
+                              <definition>Quad E15</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>E2</code>
+                              <definition>Quad E2</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>E3</code>
+                              <definition>Quad E3</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>E4</code>
+                              <definition>Quad E4</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>E5</code>
+                              <definition>Quad E5</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>N1</code>
+                              <definition>Quad N1</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>N10</code>
+                              <definition>Quad N10</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>N2</code>
+                              <definition>Quad N2</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>N3</code>
+                              <definition>Quad N3</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>N4</code>
+                              <definition>Quad N4</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>N5</code>
+                              <definition>Quad N5</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>N6</code>
+                              <definition>Quad N6</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>N7</code>
+                              <definition>Quad N7</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>N8</code>
+                              <definition>Quad N8</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>N9</code>
+                              <definition>Quad N9</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>NA1</code>
+                              <definition>Quad NA1</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>NA10</code>
+                              <definition>Quad NA10</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>NA11</code>
+                              <definition>Quad NA11</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>NA12</code>
+                              <definition>Quad NA12</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>NA13</code>
+                              <definition>Quad NA13</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>NA14</code>
+                              <definition>Quad NA14</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>NA15</code>
+                              <definition>Quad NA15</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>NA16</code>
+                              <definition>Quad NA16</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>NA17</code>
+                              <definition>Quad NA17</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>NA18</code>
+                              <definition>Quad NA18</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>NA19</code>
+                              <definition>Quad NA19</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>NA2</code>
+                              <definition>Quad NA2</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>NA20</code>
+                              <definition>Quad NA20</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>NA3</code>
+                              <definition>Quad NA3</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>NA4</code>
+                              <definition>Quad NA4</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>NA5</code>
+                              <definition>Quad NA5</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>NA6</code>
+                              <definition>Quad NA6</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>NA7</code>
+                              <definition>Quad NA7</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>NA8</code>
+                              <definition>Quad NA8</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>NA9</code>
+                              <definition>Quad NA9</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>S1</code>
+                              <definition>Quad S1</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>S10</code>
+                              <definition>Quad S10</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>S11</code>
+                              <definition>Quad S11</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>S12</code>
+                              <definition>Quad S12</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>S13</code>
+                              <definition>Quad S13</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>S14</code>
+                              <definition>Quad S14</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>S15</code>
+                              <definition>Quad S15</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>S2</code>
+                              <definition>Quad S2</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>S3</code>
+                              <definition>Quad S3</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>S4</code>
+                              <definition>Quad S4</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>S5</code>
+                              <definition>Quad S5</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>S6</code>
+                              <definition>Quad S6</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>S7</code>
+                              <definition>Quad S7</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>S8</code>
+                              <definition>Quad S8</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>S9</code>
+                              <definition>Quad S9</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>W1</code>
+                              <definition>Quad W1</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>W16</code>
+                              <definition>Quad W16</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>W17</code>
+                              <definition>Quad W17</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>W18</code>
+                              <definition>Quad W18</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>W19</code>
+                              <definition>Quad W19</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>W2</code>
+                              <definition>Quad W2</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>W20</code>
+                              <definition>Quad W20</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>W3</code>
+                              <definition>Quad W3</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>W4</code>
+                              <definition>Quad W4</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>W5</code>
+                              <definition>Quad W5</definition>
+                           </codeDefinition>
+                        </enumeratedDomain>
+                     </nonNumericDomain>
+                  </nominal>
+               </measurementScale>
+            </attribute>
+            <attribute
+            id="long.patch">
+               <attributeName>patch</attributeName>
+               <attributeLabel>Patch ID</attributeLabel>
+               <attributeDefinition>In the backreef, transects are plus-shaped and called patches. This column is the Patch corresponding to its pole ID</attributeDefinition>
+               <storageType
+            typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">char</storageType>
+               <measurementScale>
+                  <nominal>
+                     <nonNumericDomain>
+                        <textDomain>
+                           <definition>text</definition>
+                        </textDomain>
+                     </nonNumericDomain>
+                  </nominal>
+               </measurementScale>
+            </attribute>
+            <attribute>
+               <attributeName>benthic_category</attributeName>
+               <attributeLabel>Benthic Category</attributeLabel>
+               <attributeDefinition>Taxonomic family, functional group, or substrate.</attributeDefinition>
+               <storageType
+                  typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">string</storageType>
+               <measurementScale>
+                  <nominal>
+                     <nonNumericDomain>
+                        <enumeratedDomain
+            enforced="no">
+                           <codeDefinition>
+                              <code>coral</code>
+                              <definition>Scleractinian coral is a taxonomic order. Also called Stony Coral, it is the sum of Acanthastrea, Acropora, Astreopora, Cyphastrea, Favia, Fungia, Gardinoseris, Herpolitha, Leptastrea, Leptoseris, Lobophyllia, Montastrea, Montipora, Pachyseris, Pavona, Pocillopora, Porites, Psammacora, Sandolitha, Stylocoeniella and Tubastrea.</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>macroalgae</code>
+                              <definition>Macroalgae is a functional group.</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>ctb</code>
+                              <definition>Crustose Coralline Algae or Bare Space or Algal Turf. These are a functional group.</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>sand</code>
+                              <definition>Sand. Sand is a substrate.</definition>
+                           </codeDefinition>
+                           <codeDefinition>
+                              <code>milleopora</code>
+                              <definition>Hydrocorals. Millepora is a genus of coral that is not Scleractinian.</definition>
+                           </codeDefinition>
+                        </enumeratedDomain>
+                     </nonNumericDomain>
+                  </nominal>
+               </measurementScale>
+               <missingValueCode>
+                  <code>BW</code>
+                  <codeExplanation>Blue water</codeExplanation>
+               </missingValueCode>
+            </attribute>
+            <attribute>
+               <attributeName>percent_cover</attributeName>
+               <attributeLabel>Percent Cover</attributeLabel>
+               <attributeDefinition>Percent cover in quadrat of this cover class.</attributeDefinition>
+               <storageType
+                    typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">double precision</storageType>
+               <measurementScale>
+                  <ratio>
+                     <unit>
+                        <standardUnit>percent</standardUnit>
+                     </unit>
+                     <precision>1</precision>
+                     <numericDomain>
+                        <numberType>real</numberType>
+                        <bounds>
+                           <minimum
+                    exclusive="false">0.00</minimum>
+                           <maximum
+        exclusive="false">100.00</maximum>
+                        </bounds>
+                     </numericDomain>
+                  </ratio>
+               </measurementScale>
+               <missingValueCode>
+                  <code>na</code>
+                  <codeExplanation>Not available</codeExplanation>
+               </missingValueCode>
+               <missingValueCode>
+                  <code>BW</code>
+                  <codeExplanation>Blue Water. See methods section.</codeExplanation>
+               </missingValueCode>
+            </attribute>
+         </attributeList>
+         <caseSensitive>no</caseSensitive>
+         <numberOfRecords>55514</numberOfRecords>
+      </dataTable>
+   </dataset>
+   <additionalMetadata>
+      <metadata>
+         <importedFromXML
+        dateImported="2025-04-30" filename="knb-lter-mcr.1038.xml"
+        taxonomicCoverageExempt="True"/>
+      </metadata>
+   </additionalMetadata>
+   <additionalMetadata>
+      <metadata>
+         <emlEditor
+        app="ezEML" release="2025.04.16"/>
+      </metadata>
+   </additionalMetadata>
+</eml:eml>

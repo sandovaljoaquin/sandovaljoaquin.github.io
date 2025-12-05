@@ -1,0 +1,8 @@
+Manifest file for knb-lter-mcr.6.64.zip created on Sat Oct 11 20:42:38 UTC 2025
+MCR_LTER_Annual_Fish_Survey_20250324.csv (21816624 bytes)
+MCR_LTER_Extra_Fish_Survey_20250324.csv (277047 bytes)
+MCR_LTER_Initial_Fish_Survey_20250325.csv (632235 bytes)
+MCR_LTER_Fish_Species_List_20250325.csv (126032 bytes)
+knb-lter-mcr.6.64.xml (3370021 bytes)
+knb-lter-mcr.6.64.txt (1613512 bytes)
+knb-lter-mcr.6.64.report.xml (96132 bytes)

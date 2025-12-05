@@ -1,0 +1,1339 @@
+
+   
+      
+         uid=MCR,o=lter,dc=ecoinformatics,dc=org
+         all
+      
+      
+         public
+         read
+      
+   
+   
+      knb-lter-mcr.1038
+      doi:10.6073/pasta/04eb85fb55df96730862f6136dbbee05Backreef corals annual survey
+      MCR LTER: Coral Reef: Long-term Community Dynamics: Backreef (Lagoon) Corals Annual Survey, ongoing since 2005
+      
+         Moorea Coral Reef LTER
+         			Marine Science Institute, University of California,
+			University of California
+			Santa Barbara, CA 93106-6150  United States
+         mcrlter@msi.ucsb.edu
+         http://mcr.lternet.edu/
+         017vyhs10
+      
+      
+         Peter Edmunds
+         Moorea Coral Reef LTER
+         Principle Investigator
+         			Department of Biology
+			California State University
+			Northridge, CA 91330-8303  USA
+         +1(818)677-2502
+         peter.edmunds@csun.edu
+         http://www.csun.edu/science-mathematics/biology/peter-j-edmunds
+         0000-0002-9039-9347
+      
+      
+         Hillary Krumbholz
+         MCR LTER
+         Information Manager
+         			UC Santa Barbara, Marine Science Institute, Building 520
+			Santa Barbara, CA 93106-6150  United States
+         hkrumbholz@ucsb.edu
+         0000-0001-9808-1758
+      
+      
+         Kathryn Scafidi
+         Moorea Coral Reef LTER
+         Field Technician
+         0000-0001-7550-0163
+         Field Technician
+      
+      
+         Vincent Moriarty
+         Moorea Coral Reef LTER
+         0000-0002-7851-156X
+         Former Field Technician
+      
+      
+         Sam Ginther
+         Moorea Coral Reef LTER
+         818.677.4335
+         0000-0003-3263-8546
+         Former Field Technician
+      
+      2025-04-30
+      english
+      
+         This dataset contains the percentage cover of all stony corals (Scleractinia, pooled among genera) and other major groups analyzed from 0.5 x 0.5 m photographic quadrats at the Backreef habitat at the Moorea Coral Reef LTER, French Polynesia. This survey time series began in 2005 and is repeated each year in April. Functional groups counted are: Scleractinian corals, Macroalgae, Crustose Coralline Algae / Bare Space, Soft Corals, Hydrocorals (        Millepora
+), Algal Turf and Sand. The coral community was sampled photographically in all represented habitats surrounding the island: Fringing Reef, Lagoon, and Outer Reef. This dataset contains only Lagoon (Backreef) data (see knb-lter-mcr.4 for the other habitats) and is structured in a repeated-measures protocol to allow a statistical contrast of sites, shores and times. Community structure was determined through a coarse analysis of the benthic community, initially completed in situ (2005), but using photoquadrats from 2006. There are quadrats analyzed at each of five areas within each site, and the areas are revisited (but not the quadrats) each year to support the repeated measures design. There are two tables available, providing different views of the same data: a long table having all values in one column and a wide table having a separate column for each observed object. Detailed methods are available in the protocols section.
+      
+      
+         Backreef
+         LTER
+         MCR
+         Scleractinian Coral
+         French Polynesia
+         Moorea
+         Scleractinia
+         Moorea Coral Reef LTER
+      
+      
+         California State University Northridge
+         Gordon and Betty Moore Foundation
+         NSF
+         Richard B. Gump South Pacific Research Station
+         University of California Santa Barbara
+         Institute, Organization, or Funding Agency
+      
+      
+         animals
+         aquatic ecosystems
+         biodiversity
+         biology
+         communities
+         community dynamics
+         community patterns
+         coral reefs
+         demography
+         ecology
+         habitats
+         long term
+         long term monitoring
+         marine
+         monitoring
+         oceans
+         population dynamics
+         populations
+         reefs
+         species
+         species abundance
+         species diversity
+         species lists
+         species richness
+         taxonomy
+         trophic dynamics
+         ocean acidification
+         population and community properties
+         corals
+         LTER Controlled Vocabulary
+      
+      
+         Populations
+         LTER Core Research Area
+      
+      
+         This data package is released under the Creative Commons license Attribution 4.0 International (CC BY 4.0 , see
+         The Data User has an ethical obligation to cite the data source appropriately in any publication or product that results from its use, and notify the data contact or creator. Communication, collaboration, or co-authorship (as appropriate) with the creators of this data package is encouraged to prevent duplicate research or publication. The Data User is urged to contact the authors of these data if any questions about methodology or results occur. The Data User should realize that these data may be actively used by others for ongoing research and that coordination may be necessary to prevent duplication or inappropriate use. The Data User should realize that misinterpretation may occur if data are used outside of the context of the original study. The Data User should be aware that data are updated periodically and it is the responsibility of the Data User to check for new versions of the data.
+         While substantial efforts are made to ensure the accuracy of data and associated documentation, complete accuracy of data sets cannot be guaranteed. This data package (with its components) is made available "as is" and with no warranty of accuracy or fitness for use. The creators of this data package and the repository where these data were obtained shall not be liable for any damages resulting from misinterpretation, use or misuse of the data package or its components.
+      
+      
+         
+            MCR LTER site data catalog
+            http://mcr.lternet.edu/data/
+         
+      
+      
+         
+            https://doi.org/10.6073/pasta/4c1177893100125d8e63592a6cb22833
+         
+      
+      
+         
+            https://doi.org/10.6073/pasta/444e6b02536bf47fd9b7b99184465e06
+         
+      
+      https://doi.org/10.6073/pasta/04eb85fb55df96730862f6136dbbee05
+         
+            Moorea, French Polynesia
+            
+               -150.00
+               -149.67
+               -17.45
+               -17.62
+            
+         
+         
+            LTER 1 polygon including LTER 0 on north shore
+            
+               -149.8455917
+               -149.829821
+               -17.47185366
+               -17.48641792
+            
+         
+         
+            LTER 2 polygon on north shore
+            
+               -149.8116849
+               -149.7961685
+               -17.46576169
+               -17.48131958
+            
+         
+         
+            LTER 3 polygon on southeast shore
+            
+               -149.7708619
+               -149.7519968
+               -17.50382025
+               -17.52087158
+            
+         
+         
+            LTER 4 polygon on southeast shore
+            
+               -149.7772857
+               -149.7566866
+               -17.53305021
+               -17.55064263
+            
+         
+         
+            LTER 5 polygon on southwest shore
+            
+               -149.8869755
+               -149.8561009
+               -17.56818162
+               -17.59182383
+            
+         
+         
+            LTER 6 polygon on southwest shore
+            
+               -149.934537
+               -149.9115336
+               -17.50735955
+               -17.52839766
+            
+         
+         
+            
+               
+                  2005-04-01
+               
+               
+                  2024-04-08
+               
+            
+         
+         
+            
+               Phylum
+               Cnidaria
+               
+                  Class
+                  Anthozoa
+                  
+                     Order
+                     Corallimorpharia
+                  
+                  
+                     Order
+                     Scleractinia
+                     
+                        Family
+                        Acroporidae
+                        
+                           Genus
+                           Acropora
+                        
+                        
+                           Genus
+                           Astreopora
+                        
+                        
+                           Genus
+                           Montipora
+                        
+                     
+                     
+                        Family
+                        Agariciidae
+                        
+                           Genus
+                           Gardinoseris
+                        
+                        
+                           Genus
+                           Leptoseris
+                        
+                        
+                           Genus
+                           Pachyseris
+                        
+                        
+                           Genus
+                           Pavona
+                        
+                     
+                     
+                        Family
+                        Astrocoeniidae
+                        
+                           Genus
+                           Stylocoeniella
+                        
+                     
+                     
+                        Family
+                        Dendrophyllidae
+                        
+                           Genus
+                           Tubastrea
+                        
+                     
+                     
+                        Family
+                        Faviidae
+                        
+                           Genus
+                           Cyphastrea
+                        
+                        
+                           Genus
+                           Favia
+                        
+                        
+                           Genus
+                           Leptastrea
+                        
+                        
+                           Genus
+                           Montastrea
+                        
+                     
+                     
+                        Family
+                        Fungiidae
+                        
+                           Genus
+                           Fungia
+                        
+                        
+                           Genus
+                           Herpolitha
+                        
+                        
+                           Genus
+                           Sandolitha
+                        
+                     
+                     
+                        Family
+                        Mussidae
+                        
+                           Genus
+                           Acanthastrea
+                        
+                        
+                           Genus
+                           Lobophyllia
+                        
+                     
+                     
+                        Family
+                        Pocilloporidae
+                        
+                           Genus
+                           Pocillopora
+                        
+                     
+                     
+                        Family
+                        Poritidae
+                        
+                           Genus
+                           Porites
+                           
+                              Species
+                              Porites irregularis
+                           
+                           
+                              Species
+                              Porites rus
+                           
+                           
+                              Species
+                              Porites spp. Massive
+                           
+                        
+                     
+                     
+                        Family
+                        Siderastreidae
+                        
+                           Genus
+                           Psammacora
+                        
+                     
+                  
+               
+               
+                  Class
+                  Hydrozoa
+                  
+                     Order
+                     Hyroida
+                     
+                        Family
+                        Milleporidae
+                        
+                           Genus
+                           Millepora
+                        
+                     
+                  
+               
+            
+         
+      
+      
+         
+            This is an ongoing dataset. Data are added annually.
+         
+         annually
+      
+      
+         MCR LTER
+         Information Manager
+         			UC Santa Barbara, Marine Science Institute, Building 520
+			University of California
+			Santa Barbara, CA 93106-6150  United States
+         805.893.2071
+         hkrumbholz@ucsb.edu
+         https://mcr.lternet.edu/
+      
+      
+         Environmental Data Initiative
+         info@edirepository.org
+         https://edirepository.org
+         0330j0z60
+      
+      Environmental Data Initiative
+      
+         
+            
+               
+                  Photoquadrats
+                  Quantitative high resolution digital images form 2006-present (              in situ
+counts in 2005).
+               
+               
+                  Sampling
+                  The sampling strategy was designed to facilitate tests of the effect of time and shore on the coral community structure of the backreef habitats of Moorea. The backreef habitat within the lagoon and may be synonymous with lagoon habitats in other studies. The sampling design was implemented to accommodate the high spatial variation in the lagoon, and therefore quadrats along a transect were not employed. Instead, each site was characterized by 5 randomly selected patches over a spatial scale of ~50m. At each point, a cardinal axis design was implemented where quadrats were sampled along N, S, E and W axes centered on each patch. Each axis was 5 m long, and 5 quadrats (0.5 x 0.5 m) were scattered randomly along the axis; the position is re-randomized each year. This design is a nested, factorial ANOVA experimental design in which shore of Moorea (north, southeast, or southwest) was treated as a fixed factor, site (LTER 1 through LTER 6) as a random factor nested within shore, and time was a repeated measures factor based on five patches at each site. Depending on the analytical goals, the community structure at each patch can be characterized by averaging all 20 quadrats, or the quadrats can be treated as a nested factor in each patch.
+                  The census methods were designed to quantify coral community structure in terms of the dominant constituents of the benthic community - scleractinian corals, macroalgae, crustose coralline algae, sand, algal turf, and Millepora. The benthos is recorded with digital images every year and the resolution of the images generally increases across the study as the resolution of DSLR cameras has increased with time. 2020 was an unusual year when sampling was perturbed by the COVID pandemic. This year, lower resolution images were taken with a GoPro camera in late August.
+                  QA/QC of the data in April 2021 revealed ongoing challenges of accurately distinguishing among algal turf, crustose coralline algae, and bare space, and therefore, the categories were combined across the whole study to “CTB” (summation of the three categories). These groups are resolved in data set (knb.lter.mcr.8) which describes the results of surveys conducted in situ by RC Carpenter.
+                  All census methods were designed to quantify coral community structure in terms of the dominant constituents of the benthic community - scleractinian corals, macroalgae, crustose coralline algae, sand, algal turf, and millepora.
+               
+               
+                  Parameters for Photoquadrat Analysis
+                  For the purpose of analysis of the benthic community, the quadrats are divided into 25 equal squares (5 x 5 cm) and each square is scored for the benthic category (one of 6 categories as above) that dominates (i.e., ≥ 50% cover) that area. The limit of resolution is 4% change in cover. Identification has been done by various graduate students and technicians and the investigator. The images can be analyzed for coral cover at the genus level (as is accomplished in the outer reef and fringe habitats), but currently this analysis is incomplete for the back reef (2008 and 2009 are available).
+               
+            
+         
+         
+            
+               
+                  Blue Water
+                  The backreef habitat in the lagoons is relatively shallow. There is a minimum depth needed to position the camera frame over corals and still be under water. When a quadrat is too shallow, the photo may be tilted off horizontal so that part of the photo is open water, called "blue water", instead of benthic cover. This makes the photoquadrat inappropriate for percent cover analysis. For these photoquadrats the code "BW" is entered in place of coral cover percent.
+               
+            
+         
+      
+      
+         The Moorea Coral Reef (MCR) LTER
+         
+            Russell Schmitt
+            Moorea Coral Reef LTER
+            Lead Principal Investigator
+            			Marine Science Institute
+			University of California
+			Santa Barbara, CA 93106-6150  USA
+            schmitt@lifesci.ucsb.edu
+            http://mcr.lternet.edu/people/russell-j-schmitt
+            0000-0002-9674-4244
+            Principal Investigator
+         
+         
+            Sally Holbrook
+            Moorea Coral Reef LTER
+            Principal Investigator
+            			Marine Science Institute
+			University of California
+			Santa Barbara, CA 93106-6150  USA
+            holbrook@lifesci.ucsb.edu
+            http://mcr.lternet.edu/people/sally-holbrook
+            0000-0002-3015-3484
+            Principal Investigator
+         
+         
+            Peter Edmunds
+            Moorea Coral Reef LTER
+            Principal Investigator
+            			Department of Biological Sciences, California State University
+			18111 Nordhoff Street
+			Northridge, CA 91330-8303  USA
+            818.677.2502
+            peter.edmunds@csun.edu
+            http://mcr.lternet.edu/people/peter-edmunds
+            0000-0002-9039-9347
+            Principal Investigator
+         
+         
+            Robert Carpenter
+            Moorea Coral Reef LTER
+            Principal Investigator
+            			Department of Biological Sciences, California State University
+			18111 Nordhoff Street
+			Northridge, CA 91330-8303  USA
+            818-677-3256
+            robert.carpenter@csun.edu
+            http://mcr.lternet.edu/people/robert-carpenter
+            0000-0003-4232-1868
+            Principal Investigator
+         
+         
+            Deron Burkepile
+            Moorea Coral Reef LTER
+            Principle Investigator
+            			Marine Science Institute, University of California,
+			Santa Barbara, CA 93106-6150  United States
+            dburkepile@ucsb.edu
+            0000-0002-0427-0484
+            Co-Principle Investigator
+         
+         
+            This material uses data collected by the U.S. National Science Foundation's (NSF) Moorea Coral Reef Long Term Ecological Research (MCR LTER) site under Grant No. OCE 2224354 (and earlier awards). Additional financial support to the MCR LTER site was provided through a generous gift from the Gordon and Betty Moore Foundation. Research was completed under permits issued by the French Polynesian Government (Délégation à la Recherche) and the Haut-commissariat de la République en Polynésie Francaise (DTRT) (Protocole d'Accueil 2005-2025).
+            
+            With respect to the spelling of Moorea, we followed the Raapoto transcription system that is adhered to by a large segment of the Tahitian community but also recognizes other community members follow the Te Fare Vāna’a transcription system where the island name is spelled with an ’eta (Mo’orea).
+         
+         
+            NSF (LTER) MCR I #OCE-0417412, MCR II #OCE-1026851, MCR IIb #OCE-1236905, MCR III #OCE-1637396, and MCR IV #OCE-2224354
+         
+      
+      
+         Percent cover as wide table
+         Photoquadrat analysis results: Percent cover of benthic taxa inlcuding corals by groups of genera. This table contains the same data as the long-format table, reformatted into wide-format.
+         
+            MCR_LTER_Coral_Cover_Backreef_Wide_20250429.csv
+            542437
+            f35d6b3ea59930d82ea84e7561eb9e46
+            
+               
+                  1
+                  \r\n
+                  column
+                  
+                     ,
+                     "
+                  
+               
+            
+            
+               
+                  https://pasta.lternet.edu/package/data/eml/knb-lter-mcr/1038/14/b7ca625d17a5630441af8c229cc0ab92
+               
+            
+         
+         
+            
+               year
+               Year
+               Year of Observation. Annual surveys are between April 1 to May 15 of each year.
+               integer
+               
+                  
+                     YYYY
+                     1
+                     
+                  
+               
+            
+            
+               site
+               Site ID
+               Number part of site ID.
+               integer
+               
+                  
+                     
+                        
+                           
+                              LTER_1
+                              LTER 1 - located on North shore
+                           
+                           
+                              LTER_2
+                              LTER 2 - located on North shore
+                           
+                           
+                              LTER_3
+                              LTER 3 - located on East side
+                           
+                           
+                              LTER_4
+                              LTER 4 - located on East side
+                           
+                           
+                              LTER_5
+                              LTER 5 - located on West side
+                           
+                           
+                              LTER_6
+                              LTER 6 - located on West side
+                           
+                        
+                     
+                  
+               
+            
+            
+               habitat
+               habitat
+               Habitat type
+               string
+               
+                  
+                     
+                        
+                           
+                              Backreef
+                              Backreef - located in the lagoon
+                           
+                        
+                     
+                  
+               
+            
+            
+               depth
+               depth
+               Depth of transect
+               float
+               
+                  
+                     
+                        meter
+                     
+                     
+                        real
+                     
+                  
+               
+            
+            
+               quad
+               Quadrat ID
+               Quadrat ID. Quadrats are numbered either sequentially or on a north, south, east, west plus-sign orientation.
+               string
+               
+                  
+                     
+                        
+                           text
+                        
+                     
+                  
+               
+            
+            
+               patch
+               Patch ID
+               Patch ID number. A patch is analogous to a transect. Each site has 5 patches.
+               integer
+               
+                  
+                     
+                        
+                           
+                              1
+                              Patch 1
+                           
+                           
+                              2
+                              Patch 2
+                           
+                           
+                              3
+                              Patch 3
+                           
+                           
+                              4
+                              Patch 4
+                           
+                           
+                              5
+                              Patch 5
+                           
+                        
+                     
+                  
+               
+            
+            
+               coral
+               Percent Stony Coral
+               Percent cover of Stony Coral in photoquadrat. Stony Coral is the sum of Acanthastrea, Acropora, Astreopora, Cyphastrea, Favia, Fungia, Gardinoseris, Herpolitha, Leptastrea, Leptoseris, Lobophyllia, Montastrea, Montipora, Pachyseris, Pavona, Pocillopora, Porites, Psammacora, Sandolitha, Stylocoeniella and Tubastrea.
+               double precision
+               
+                  
+                     
+                        percent
+                     
+                     1
+                     
+                        real
+                        
+                           0
+                           100
+                        
+                     
+                  
+               
+               
+                  na
+                  Not available
+               
+               
+                  BW
+                  Blue Water. See methods section.
+               
+            
+            
+               macroalgae
+               Percent Macroalgae
+               Percent cover of Macroalgae in photoquadrat. Macroalgae is a functional group.
+               double precision
+               
+                  
+                     
+                        percent
+                     
+                     1
+                     
+                        real
+                        
+                           0
+                           100
+                        
+                     
+                  
+               
+               
+                  na
+                  Not available
+               
+               
+                  BW
+                  Blue Water. See methods section.
+               
+            
+            
+               sand
+               Percent Sand
+               Percent cover of Sand in photoquadrat. Sand is a substrate.
+               double precision
+               
+                  
+                     
+                        percent
+                     
+                     1
+                     
+                        real
+                        
+                           0
+                           100
+                        
+                     
+                  
+               
+               
+                  na
+                  Not available
+               
+               
+                  BW
+                  Blue Water. See methods section.
+               
+            
+            
+               millepora
+               Percent Millepora
+               Percent cover of Millipora in photoquadrat. Millipora is a genus of Hydrocoral.
+               double precision
+               
+                  
+                     
+                        percent
+                     
+                     1
+                     
+                        real
+                        
+                           0
+                           100
+                        
+                     
+                  
+               
+               
+                  na
+                  Not available
+               
+               
+                  BW
+                  Blue Water. See methods section.
+               
+            
+            
+               ctb
+               Percent Crustose Coralline Algae / Bare Space / Turf
+               Percent cover of Crustose Coralline Algae or Bare Space or Turf in photoquadrat. Crustose Coralline Algae / Bare Space / Turf is a functional group.
+               double precision
+               
+                  
+                     
+                        percent
+                     
+                     1
+                     
+                        real
+                        
+                           0
+                           100
+                        
+                     
+                  
+               
+               
+                  na
+                  Not available
+               
+               
+                  BW
+                  Blue Water. See methods section.
+               
+            
+            
+               sub_squares
+               Sub-squares counted
+               Number of square sub-divisions of the quadrat counted. Normally 25, unless sub-squares fell on uncategorized classes. Each class was divided by this total count to get fraction, or x100 to get percent cover.
+               integer
+               
+                  
+                     
+                        number
+                     
+                     
+                        integer
+                     
+                  
+               
+            
+            
+               note
+               Comment
+               Any unusual circumstances.
+               string
+               
+                  
+                     
+                        
+                           text
+                        
+                     
+                  
+               
+               
+                  na
+                  No note
+               
+            
+         
+         no
+         11146
+      
+      
+         Percent cover as long table
+         Photoquadrat analysis results: Percent cover of benthic taxa, grouping genera of corals.
+         
+            MCR_LTER_Coral_Cover_Backreef_Long_20250429.csv
+            2192701
+            64d937e3f8716747d6f1c3cd0bb02a4f
+            
+               
+                  1
+                  \r\n
+                  column
+                  
+                     ,
+                     "
+                  
+               
+            
+            
+               
+                  https://pasta.lternet.edu/package/data/eml/knb-lter-mcr/1038/14/6ed52e44bcd4d0360d2f95d24674204c
+               
+            
+         
+         
+            
+               year
+               Year
+               Year of Observation. Annual surveys are between April 1 to May 15 of each year.
+               integer
+               
+                  
+                     YYYY
+                     1
+                     
+                  
+               
+            
+            
+               site
+               Site ID
+               Number part of site ID.
+               integer
+               
+                  
+                     
+                        
+                           
+                              LTER_1
+                              LTER 1 - located on North shore
+                           
+                           
+                              LTER_2
+                              LTER 2 - located on North shore
+                           
+                           
+                              LTER_3
+                              LTER 3 - located on East side
+                           
+                           
+                              LTER_4
+                              LTER 4 - located on East side
+                           
+                           
+                              LTER_5
+                              LTER 5 - located on West side
+                           
+                           
+                              LTER_6
+                              LTER 6 - located on West side
+                           
+                        
+                     
+                  
+               
+            
+            
+               habitat
+               habitat
+               Habitat type
+               string
+               
+                  
+                     
+                        
+                           
+                              Backreef
+                              Backreef - located in the lagoon
+                           
+                        
+                     
+                  
+               
+            
+            
+               depth
+               depth
+               Depth of transect
+               float
+               
+                  
+                     
+                        meter
+                     
+                     
+                        real
+                     
+                  
+               
+            
+            
+               quad
+               Quadrat ID
+               Quadrat number identifies the quadrat. Some quadrats are laid out in a N-S-E-W cross; other patches have quadrats 1 to 10, others 1 to 20.
+               string
+               
+                  
+                     
+                        
+                           
+                              E1
+                              Quad E1
+                           
+                           
+                              E11
+                              Quad E11
+                           
+                           
+                              E12
+                              Quad E12
+                           
+                           
+                              E13
+                              Quad E13
+                           
+                           
+                              E14
+                              Quad E14
+                           
+                           
+                              E15
+                              Quad E15
+                           
+                           
+                              E2
+                              Quad E2
+                           
+                           
+                              E3
+                              Quad E3
+                           
+                           
+                              E4
+                              Quad E4
+                           
+                           
+                              E5
+                              Quad E5
+                           
+                           
+                              N1
+                              Quad N1
+                           
+                           
+                              N10
+                              Quad N10
+                           
+                           
+                              N2
+                              Quad N2
+                           
+                           
+                              N3
+                              Quad N3
+                           
+                           
+                              N4
+                              Quad N4
+                           
+                           
+                              N5
+                              Quad N5
+                           
+                           
+                              N6
+                              Quad N6
+                           
+                           
+                              N7
+                              Quad N7
+                           
+                           
+                              N8
+                              Quad N8
+                           
+                           
+                              N9
+                              Quad N9
+                           
+                           
+                              NA1
+                              Quad NA1
+                           
+                           
+                              NA10
+                              Quad NA10
+                           
+                           
+                              NA11
+                              Quad NA11
+                           
+                           
+                              NA12
+                              Quad NA12
+                           
+                           
+                              NA13
+                              Quad NA13
+                           
+                           
+                              NA14
+                              Quad NA14
+                           
+                           
+                              NA15
+                              Quad NA15
+                           
+                           
+                              NA16
+                              Quad NA16
+                           
+                           
+                              NA17
+                              Quad NA17
+                           
+                           
+                              NA18
+                              Quad NA18
+                           
+                           
+                              NA19
+                              Quad NA19
+                           
+                           
+                              NA2
+                              Quad NA2
+                           
+                           
+                              NA20
+                              Quad NA20
+                           
+                           
+                              NA3
+                              Quad NA3
+                           
+                           
+                              NA4
+                              Quad NA4
+                           
+                           
+                              NA5
+                              Quad NA5
+                           
+                           
+                              NA6
+                              Quad NA6
+                           
+                           
+                              NA7
+                              Quad NA7
+                           
+                           
+                              NA8
+                              Quad NA8
+                           
+                           
+                              NA9
+                              Quad NA9
+                           
+                           
+                              S1
+                              Quad S1
+                           
+                           
+                              S10
+                              Quad S10
+                           
+                           
+                              S11
+                              Quad S11
+                           
+                           
+                              S12
+                              Quad S12
+                           
+                           
+                              S13
+                              Quad S13
+                           
+                           
+                              S14
+                              Quad S14
+                           
+                           
+                              S15
+                              Quad S15
+                           
+                           
+                              S2
+                              Quad S2
+                           
+                           
+                              S3
+                              Quad S3
+                           
+                           
+                              S4
+                              Quad S4
+                           
+                           
+                              S5
+                              Quad S5
+                           
+                           
+                              S6
+                              Quad S6
+                           
+                           
+                              S7
+                              Quad S7
+                           
+                           
+                              S8
+                              Quad S8
+                           
+                           
+                              S9
+                              Quad S9
+                           
+                           
+                              W1
+                              Quad W1
+                           
+                           
+                              W16
+                              Quad W16
+                           
+                           
+                              W17
+                              Quad W17
+                           
+                           
+                              W18
+                              Quad W18
+                           
+                           
+                              W19
+                              Quad W19
+                           
+                           
+                              W2
+                              Quad W2
+                           
+                           
+                              W20
+                              Quad W20
+                           
+                           
+                              W3
+                              Quad W3
+                           
+                           
+                              W4
+                              Quad W4
+                           
+                           
+                              W5
+                              Quad W5
+                           
+                        
+                     
+                  
+               
+            
+            
+               patch
+               Patch ID
+               In the backreef, transects are plus-shaped and called patches. This column is the Patch corresponding to its pole ID
+               char
+               
+                  
+                     
+                        
+                           text
+                        
+                     
+                  
+               
+            
+            
+               benthic_category
+               Benthic Category
+               Taxonomic family, functional group, or substrate.
+               string
+               
+                  
+                     
+                        
+                           
+                              coral
+                              Scleractinian coral is a taxonomic order. Also called Stony Coral, it is the sum of Acanthastrea, Acropora, Astreopora, Cyphastrea, Favia, Fungia, Gardinoseris, Herpolitha, Leptastrea, Leptoseris, Lobophyllia, Montastrea, Montipora, Pachyseris, Pavona, Pocillopora, Porites, Psammacora, Sandolitha, Stylocoeniella and Tubastrea.
+                           
+                           
+                              macroalgae
+                              Macroalgae is a functional group.
+                           
+                           
+                              ctb
+                              Crustose Coralline Algae or Bare Space or Algal Turf. These are a functional group.
+                           
+                           
+                              sand
+                              Sand. Sand is a substrate.
+                           
+                           
+                              milleopora
+                              Hydrocorals. Millepora is a genus of coral that is not Scleractinian.
+                           
+                        
+                     
+                  
+               
+               
+                  BW
+                  Blue water
+               
+            
+            
+               percent_cover
+               Percent Cover
+               Percent cover in quadrat of this cover class.
+               double precision
+               
+                  
+                     
+                        percent
+                     
+                     1
+                     
+                        real
+                        
+                           0.00
+                           100.00
+                        
+                     
+                  
+               
+               
+                  na
+                  Not available
+               
+               
+                  BW
+                  Blue Water. See methods section.
+               
+            
+         
+         no
+         55514
+      
+   
+   
+      
+         
+      
+   
+   
+      
+         
+      
+   
