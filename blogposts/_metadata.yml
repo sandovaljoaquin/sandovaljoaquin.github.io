@@ -1,14 +1,13 @@
 ---
 author: 
   - name: Joaquin Sandoval
-    url: https://sandovaljoaquin.github.io/blogposts/
-    affiliation : MEDS 
+    url: https://sandovaljoaquin.github.io/
+    affiliation : Bren School of Environmental Science & Management
     affiliation-url: https://bren.ucsb.edu/
-date: 2025-11-05
 categories: [R, Python, Geospatial]
 image: IMG_1463.png
 citation: 
-  url: https://sandovaljoaquin.github.io
+  url: https://sandovaljoaquin.github.io/blogposts
   
 title-block-banner: true
 ---
