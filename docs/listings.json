@@ -1,6 +1,9 @@
 [
   {
     "listing": "/blogposts.html",
-    "items": []
+    "items": [
+      "/blogposts/corallivores/corallivores_rough.html",
+      "/blogposts/fire-analyses/fire_analyses.html"
+    ]
   }
 ]

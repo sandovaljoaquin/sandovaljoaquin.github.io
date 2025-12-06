@@ -7,7 +7,6 @@ website:
  # favicon: images/favicon.pmg
   navbar:
     title: false
-    logo: images/logo.png
     right:
       - href: index.qmd
         text: Home
