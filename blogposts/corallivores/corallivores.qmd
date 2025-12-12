@@ -1,13 +1,16 @@
 ---
 title: "Mo'orea Corallivores"
-format: html
-embed-resources: true
-standalone: true 
-toc: true
-code-fold: true
-editor: visual
-author: Joaquin Sandoval 
-date: 12/11/2025
+author: 
+  - name: Joaquin Sandoval
+    url: https://sandovaljoaquin.github.io/
+    affiliation : Bren School of Environmental Science & Management
+    affiliation-url: https://bren.ucsb.edu/
+categories: [R]
+image: corallivore.png
+citation: 
+  url: https://sandovaljoaquin.github.io/blogposts/corallivores
+  
+title-block-banner: true
 ---
 
 ```{r, echo = FALSE, message=FALSE, warning=FALSE}
