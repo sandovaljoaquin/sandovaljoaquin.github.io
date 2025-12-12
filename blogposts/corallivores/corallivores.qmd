@@ -1,0 +1,329 @@
+---
+title: "Mo'orea Corallivores"
+format: html
+embed-resources: true
+standalone: true 
+toc: true
+code-fold: true
+editor: visual
+author: Joaquin Sandoval 
+date: 12/11/2025
+---
+
+```{r, echo = FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(here)
+library(janitor)
+library(dplyr)
+library(patchwork)
+library(betareg)
+library(glmmTMB)
+library(kableExtra)
+theme_set(theme_classic(12))
+set.seed(42)
+```
+
+```{r, echo = FALSE, fig.cap = "Juvenile *Chaetodon reticulatus*. Image courtesy of Keoki Stender"}
+
+knitr::include_graphics("corallivore.png")
+```
+
+## Is there a relationship between decreasing coral cover and corallivore abundance in backreef sites around Mo'orea, French Polynesia?
+
+Coral reefs around the islands of Moʻorea are threatened by a variety of anthropogenic and natural stressors, such as cyclone activity and outbreaks of the predatory sea star (*Acanthaster planci*), which feeds on coral tissue.¹ In response to these stressors, many locations around the island have undergone phase shifts in their benthic composition, transforming coral‑dominated communities into macroalgae‑dominated ones.² In particular, the back‑reefs have been heavily transformed by the presence of *Turbinaria ornata*, a well‑defended and persistent alga.³ I am interested in whether the resulting fish communities have changed as a result, especially the abundance of corallivores that feed primarily on scleractinian corals. In the following analysis, I will assess the impact of changing coral cover on corallivore populations.
+
+The analysis involves two datasets, both from the Moʻorea Coral Reef Long‑Term Ecological Research (LTER) site.
+
+1.  **Long‑term Population and Community Dynamics: Fishes** (ongoing since 2005)⁴ – describes species abundance and estimated size distributions (total body length to the greatest precision possible) of fishes surveyed as part of MCR LTER’s annual reef‑fish monitoring program. This dataset will be filtered to back‑reef sites and the fine trophic level of corallivore. Corallivores were not recorded group in the first year of the survey so 2005 will be excluded.
+
+2.  **Long‑term Community Dynamics: Backreef (Lagoon) Corals Annual Survey** (ongoing since 2005)⁵ – describes the percentage cover of all stony corals (Scleractinia, pooled among genera) and other major groups, analyzed from 0.5 × 0.5 m photographic quadrats at the back‑reef habitat of the Moorea Coral Reef LTER, French Polynesia.
+
+```{r, output = FALSE, message = FALSE}
+# Read in fish and coral data 
+fish <- read_csv(here("blogposts", "corallivores", "data", "MCR_LTER_Annual_Fish_Survey_20250324.csv")) |> 
+  janitor::clean_names()
+
+coral_cover <- read_csv(here("blogposts", "corallivores", "data", "MCR_LTER_Coral_Cover_Backreef_Long_20250429.csv")) |> 
+  janitor::clean_names()
+```
+
+## Change in Corallivore Abundance through time
+
+```{r, message = FALSE}
+fish_2006 <- fish |> 
+  group_by(fine_trophic, habitat) |> 
+  filter(fine_trophic != "na")|> 
+  filter(year == "2006") |> 
+  filter(habitat == "Backreef") |> 
+  summarise(n = n()) |> 
+  mutate(total_number = n) |> 
+  arrange(desc(total_number))
+          
+          
+fish_2006_plot <- ggplot(fish_2006, aes(x = total_number, 
+                      y = reorder(fine_trophic, +total_number), 
+                      fill = fine_trophic)) +
+  geom_col() + 
+  ylab(" ") + 
+  xlab("Count") + 
+  labs(title = " 2006 Backreef Fish Abundance by Group", 
+       x = "Count") +
+  theme(legend.position = "none")
+
+fish_2024 <- fish |> 
+  group_by(fine_trophic, habitat) |> 
+  filter(fine_trophic != "na")|> 
+  filter(year == "2024") |> 
+  filter(habitat == "Backreef") |> 
+  summarise(n = n()) |> 
+  mutate(total_number = n) |> 
+  arrange(desc(total_number))
+
+fish_2024_plot <- ggplot(fish_2024, aes(x = total_number, 
+                      y = reorder(fine_trophic, +total_number), 
+                      fill = fine_trophic)) +
+  geom_col() + 
+  ylab(" ") + 
+  xlab("Count") + 
+  labs(title = " 2024 Backreef Fish Abundance by Group", 
+       x = "Count") +
+  theme(legend.position = "none")
+
+```
+
+```{r, echo = FALSE}
+fish_2006_plot 
+fish_2024_plot
+```
+
+Corallivores fell from the **third‑most abundant group** in the first survey year (202 individuals) to the **sixth‑most abundant group** in the most recent sampling year (79 individuals) at the LTER back‑reef sites. The figure below shows the decline of observed fish from 2006 to 2024.
+
+```{r}
+corallivores_through_years <- fish |> 
+  group_by(year) |> 
+  filter(habitat == "Backreef") |> 
+  filter(fine_trophic == "Corallivore") |> 
+  summarise(n = n()) |> 
+  mutate(total_number = n)
+  
+corallivore_plot <- ggplot(corallivores_through_years, 
+       aes(x = year, 
+           y = total_number)) + 
+  geom_line(color = "lightblue") + 
+  labs(x = "Year", 
+    y = "Count", 
+    title = "Change in Backreef Corallivore Abundance (2006-2024)")
+
+corallivore_plot
+```
+
+## Relationships and Causal Relationships
+
+```{r, echo = FALSE}
+knitr::include_graphics("DAG.png")
+```
+
+The three predictor variables included in this model are **LTER site**, **year**, and **mean coral cover of transects within a site**. The site and year should determine coral cover, which in turn should determine the response variable: the proportion of corallivores in the fish community.
+
+## Statistical model
+
+$$
+\begin{align}
+\text{Proportion Corallivores} &\sim Beta(\mu, \phi) \\
+logit(\mu) &= \beta_0 + \beta_1 \text{Mean Site Coral Cover} + \beta_2 \text{Site} + \beta_3 \text{Year}
+\end{align}
+$$ Beta regression models are commonly used to model variables that return values between 0 and 1. The dependent variable is assumed to follow a beta distribution, and its expected value is linked to the explanatory variables by a linear combination of coefficients passed through a chosen link function.⁶
+
+The standard beta‑distribution parameters are α and β. For regression it is convenient to re‑parameterize them in terms of:
+
+α = μ\*ϕ
+
+β = (1- μ)\*ϕ
+
+where:
+
+μ – the mean of the beta distribution (must lie in be between 0 and 1).
+
+ϕ – the precision parameter; larger ϕ yields lower variance, while smaller ϕ produces higher variance.
+
+Because μ needs to be between 0 and 1, a transformation using the logit link is necessary to convert values to that range.
+
+## Simulate data according to model assumptions / Model fit to simulated data recovers the parameters
+
+The following parameters will be assigned these values:
+
+β0 = .5
+
+β1 = 1
+
+ϕ = 5
+
+We should recover them after the following data simulation and model fit.
+
+```{r}
+# Sample size for simulation  
+n <- 5000
+# Precision parameter
+phi <- 5
+# Intercept 
+beta0 <- .5 
+# Predictor coefficient 
+beta1 <- 1 
+
+
+# Generate random numbers from a normal distribution of sample size 
+predictor <- rnorm(n)
+
+# Logit mu regression line 
+logit_mu <- beta0 + beta1 * predictor 
+
+# plogis() converts logit_mu to mu which will be bound between 0 and 1
+mu <- plogis(logit_mu) 
+
+# Alpha shape of beta distribution or shape 1 
+alpha <- mu * phi
+# Beta shape of beta distribution or shape 2 
+beta  <- (1 - mu) * phi
+
+
+# Simulate response variable with sample size n and two shape parameters using rbeta()
+response <- rbeta(n, alpha, beta)
+
+# Fit beta regression model to simulated data 
+model <- betareg(response ~ predictor)
+
+# Obatain parameters: b0, b1, and phi 
+summary(model)
+
+```
+
+The summary returned the following:
+
+Intercept (β0): 0.49657
+
+predictor (β1): 1.00919
+
+phi(ϕ): 4.97625
+
+All values were significant and extremely close to the originally assigned numbers above.
+
+## Inference
+
+**Alternative Hypothesis**: There is a positive relationship between mean site coral cover and proportion corallivore in the backreef fish community.
+
+**Null Hypothesis** : There is no relationship between mean site coral cover and proportion corallivore in the backreef fish community.
+
+First, process the data to create a dataframe that includes, for each LTER back‑reef site and each year, the proportion of corallivores and the mean coral cover of the monitored transects.
+
+```{r, message = FALSE}
+# Clean fish data
+corallivore <- fish |> 
+  filter(habitat == "Backreef") |> 
+  group_by(year, site ) |> 
+  summarise(proportion_corallivore = mean(fine_trophic == "Corallivore", na.rm = TRUE)) 
+
+# Clean coral data
+coral_cover <- coral_cover |> 
+  filter(benthic_category == "coral") |> 
+  group_by(year, site) |> 
+  summarise(mean_site_coral_cover = mean(percent_cover)) 
+
+# Join two dataframes together by year and site
+full_data_frame <- left_join(coral_cover, corallivore, join_by(year, site)) 
+
+# Drop 2005 (no Corallivore observations) and convert year to a factor
+full_data_frame <- full_data_frame |> 
+  filter(year != 2005) |> 
+  mutate(year = as.factor(year))
+```
+
+**Plot**
+
+```{r, message=FALSE}
+site_labels <- c(
+  "LTER_1" = "LTER 1",
+  "LTER_2" = "LTER 2",
+  "LTER_3" = "LTER 3",
+  "LTER_4" = "LTER 4",
+  "LTER_5" = "LTER 5",
+  "LTER_6" = "LTER 6")
+
+ggplot(full_data_frame, 
+       aes(x = mean_site_coral_cover, 
+           y = proportion_corallivore)) + 
+  geom_point() + 
+  facet_wrap("site",labeller = labeller(site = site_labels)) + 
+  labs(x = "Mean Site Coral Cover (%)", 
+       y = "Proportion Corallivore") + 
+  geom_smooth(method = "glm")
+```
+
+## Fit Beta Regression Model to Data and Interpret Coefficents and Confidence Intervals
+
+```{r}
+# Fit beta regression model to data using glmmTMB()
+
+corallivore_model <- glmmTMB(proportion_corallivore ~ mean_site_coral_cover + site + year,
+  data = full_data_frame,
+  family = beta_family(link = "logit"))
+
+# Create grid of with percentage values of coral cover from 0 to 1. Reference year is 2006, reference site is LTER 1
+
+pred_grid <- expand_grid(mean_site_coral_cover = seq(0,1, by = 0.01)) |> 
+  mutate(site = "LTER_1", 
+    year  = 2006)
+
+# Make predictions with corallivore model along with standard error of each response value
+
+pred_se <- predict(
+  corallivore_model,
+  newdata = pred_grid,
+  type = "response",
+  se.fit = TRUE
+)
+
+# Combine predictions with upper/lower bounds of confidence intervals
+
+prediction_final <- pred_grid |> 
+  mutate(
+    fit = pred_se$fit,
+    se = pred_se$se.fit,
+    lower = fit - 1.96 * se,
+    upper = fit + 1.96 * se
+  )
+
+# Plot expected response of model and CIs
+
+ggplot(prediction_final, aes(x = mean_site_coral_cover, y = fit)) +
+  geom_line(colour = "lightblue") +
+  geom_ribbon(aes(ymin = lower, ymax = upper),
+              fill = "lightblue", alpha = 0.2) +
+  scale_y_continuous(limits = c(0, 0.10),   # y‑axis from 0 to 0.10
+                     expand = expansion(mult = c(0, 0.05))) +
+  labs(
+    x = "Mean Site Coral Cover",
+    y = "Proportion Corallivore"
+  ) +
+  theme_minimal()
+
+summary(corallivore_model)
+
+```
+
+**Hypothesis Test and Evidence Interpretation**
+
+Mean site coral cover showed a small positive association with the proportion of corallivores (β₁ = 0.0079, SE = 0.0040). The 95% confidence interval ranged from approximately zero to 0.016, indicating considerable uncertainty around the estimate and suggesting that the true effect, while unlikely to be negative, may be very weak. This relationship was not statistically significant (p = 0.050033), falling just above the conventional threshold for significance. Therefore we fail to reject the null hypothesis that there is no relationship between mean site coral cover and proportion corallivore in the backreef fish community. Because of potential site-level heterogeneity, further analyses examining site-specific effects may help clarify how coral cover influences corallivore abundance in the backreefs of Mo'orea, French Polynesia.
+
+**References**
+
+1.  Trapon, Mélanie L., Pratchett, Morgan S., Penin, Lucie, Comparative Effects of Different Disturbances in Coral Reef Habitats in Moorea, French Polynesia, Journal of Marine Sciences, 2011, 807625, 11 pages, 2011. https://doi.org/10.1155/2011/807625
+
+2.  Adam TC, Schmitt RJ, Holbrook SJ, Brooks AJ, Edmunds PJ, Carpenter RC, et al. (2011) Herbivory, Connectivity, and Ecosystem Resilience: Response of a Coral Reef to a Large-Scale Perturbation. PLoS ONE 6(8): e23717. https://doi.org/10.1371/journal.pone.0023717
+
+3.  Bittick, S.J., Bilotti, N.D., Peterson, H.A. et al. Turbinaria ornata as an herbivory refuge for associate algae. Mar Biol 157, 317–323 (2010). https://doi.org/10.1007/s00227-009-1319-6
+
+4.  Moorea Coral Reef LTER and A. Brooks. 2025. MCR LTER: Coral Reef: Long-term Population and Community Dynamics: Fishes, ongoing since 2005 ver 64. Environmental Data Initiative. https://doi.org/10.6073/pasta/22e7873fb5e4849bad587559f85a1030 (Accessed 2025-12-11).
+
+5.  Moorea Coral Reef LTER and P. Edmunds. 2025. MCR LTER: Coral Reef: Long-term Community Dynamics: Backreef (Lagoon) Corals Annual Survey, ongoing since 2005 ver 14. Environmental Data Initiative. https://doi.org/10.6073/pasta/04eb85fb55df96730862f6136dbbee05 (Accessed 2025-12-11).
+
+6.  Cribari-Neto, F., & Zeileis, A. (2010). Beta Regression in R. Journal of Statistical Software, 34(2), 1–24. https://doi.org/10.18637/jss.v034.i02
