@@ -258,17 +258,22 @@ window.Quarto = {
 <li><p><strong>Long‑term Community Dynamics: Backreef (Lagoon) Corals Annual Survey</strong> (ongoing since 2005)⁵ – describes the percentage cover of all stony corals (Scleractinia, pooled among genera) and other major groups, analyzed from 0.5 × 0.5 m photographic quadrats at the back‑reef habitat of the Moorea Coral Reef LTER, French Polynesia.</p></li>
 </ol>
 <div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in fish and coral data </span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>fish <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">"blogposts"</span>, <span class="st">"corallivores"</span>, <span class="st">"data"</span>, <span class="st">"MCR_LTER_Annual_Fish_Survey_20250324.csv"</span>)) <span class="sc">|&gt;</span> </span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  janitor<span class="sc">::</span><span class="fu">clean_names</span>()</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>coral_cover <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">"blogposts"</span>, <span class="st">"corallivores"</span>, <span class="st">"data"</span>, <span class="st">"MCR_LTER_Coral_Cover_Backreef_Long_20250429.csv"</span>)) <span class="sc">|&gt;</span> </span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  janitor<span class="sc">::</span><span class="fu">clean_names</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
 </div>
 </section>
 <section id="change-in-corallivore-abundance-through-time" class="level2">
 <h2 class="anchored" data-anchor-id="change-in-corallivore-abundance-through-time">Change in Corallivore Abundance through time</h2>
 <div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>fish_2006 <span class="ot">&lt;-</span> fish <span class="sc">|&gt;</span> </span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(fine_trophic, habitat) <span class="sc">|&gt;</span> </span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(fine_trophic <span class="sc">!=</span> <span class="st">"na"</span>)<span class="sc">|&gt;</span> </span>
@@ -307,6 +312,7 @@ window.Quarto = {
 <span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">" 2024 Backreef Fish Abundance by Group"</span>, </span>
 <span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Count"</span>) <span class="sc">+</span></span>
 <span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -326,6 +332,8 @@ window.Quarto = {
 </div>
 <p>Corallivores fell from the <strong>third‑most abundant group</strong> in the first survey year (202 individuals) to the <strong>sixth‑most abundant group</strong> in the most recent sampling year (79 individuals) at the LTER back‑reef sites. The figure below shows the decline of observed fish from 2006 to 2024.</p>
 <div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>corallivores_through_years <span class="ot">&lt;-</span> fish <span class="sc">|&gt;</span> </span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(year) <span class="sc">|&gt;</span> </span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(habitat <span class="sc">==</span> <span class="st">"Backreef"</span>) <span class="sc">|&gt;</span> </span>
@@ -342,6 +350,7 @@ window.Quarto = {
 <span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Change in Backreef Corallivore Abundance (2006-2024)"</span>)</span>
 <span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>corallivore_plot</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -388,6 +397,8 @@ logit(\mu) &amp;= \beta_0 + \beta_1 \text{Mean Site Coral Cover} + \beta_2 \text
 <p>ϕ = 5</p>
 <p>We should recover them after the following data simulation and model fit.</p>
 <div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample size for simulation  </span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">5000</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Precision parameter</span></span>
@@ -421,6 +432,7 @@ logit(\mu) &amp;= \beta_0 + \beta_1 \text{Mean Site Coral Cover} + \beta_2 \text
 <span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a><span class="co"># Obatain parameters: b0, b1, and phi </span></span>
 <span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -459,6 +471,8 @@ Number of iterations: 12 (BFGS) + 2 (Fisher scoring) </code></pre>
 <p><strong>Null Hypothesis</strong> : There is no relationship between mean site coral cover and proportion corallivore in the backreef fish community.</p>
 <p>First, process the data to create a dataframe that includes, for each LTER back‑reef site and each year, the proportion of corallivores and the mean coral cover of the monitored transects.</p>
 <div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Clean fish data</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>corallivore <span class="ot">&lt;-</span> fish <span class="sc">|&gt;</span> </span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(habitat <span class="sc">==</span> <span class="st">"Backreef"</span>) <span class="sc">|&gt;</span> </span>
@@ -478,9 +492,12 @@ Number of iterations: 12 (BFGS) + 2 (Fisher scoring) </code></pre>
 <span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>full_data_frame <span class="ot">&lt;-</span> full_data_frame <span class="sc">|&gt;</span> </span>
 <span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">!=</span> <span class="dv">2005</span>) <span class="sc">|&gt;</span> </span>
 <span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">year =</span> <span class="fu">as.factor</span>(year))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
 </div>
 <p><strong>Plot</strong></p>
 <div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>site_labels <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"LTER_1"</span> <span class="ot">=</span> <span class="st">"LTER 1"</span>,</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"LTER_2"</span> <span class="ot">=</span> <span class="st">"LTER 2"</span>,</span>
@@ -497,6 +514,7 @@ Number of iterations: 12 (BFGS) + 2 (Fisher scoring) </code></pre>
 <span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Mean Site Coral Cover (%)"</span>, </span>
 <span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Proportion Corallivore"</span>) <span class="sc">+</span> </span>
 <span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"glm"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -509,6 +527,8 @@ Number of iterations: 12 (BFGS) + 2 (Fisher scoring) </code></pre>
 <section id="fit-beta-regression-model-to-data-and-interpret-coefficents-and-confidence-intervals" class="level2">
 <h2 class="anchored" data-anchor-id="fit-beta-regression-model-to-data-and-interpret-coefficents-and-confidence-intervals">Fit Beta Regression Model to Data and Interpret Coefficents and Confidence Intervals</h2>
 <div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit beta regression model to data using glmmTMB()</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>corallivore_model <span class="ot">&lt;-</span> <span class="fu">glmmTMB</span>(proportion_corallivore <span class="sc">~</span> mean_site_coral_cover <span class="sc">+</span> site <span class="sc">+</span> year,</span>
@@ -553,6 +573,7 @@ Number of iterations: 12 (BFGS) + 2 (Fisher scoring) </code></pre>
 <span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Proportion Corallivore"</span></span>
 <span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
 <span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -560,7 +581,10 @@ Number of iterations: 12 (BFGS) + 2 (Fisher scoring) </code></pre>
 </figure>
 </div>
 </div>
+<details class="code-fold">
+<summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(corallivore_model)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code> Family: beta  ( logit )
 Formula:          proportion_corallivore ~ mean_site_coral_cover + site + year
