@@ -56,10 +56,10 @@ The following code used to make the visuals in the infographic can be accsessed 
 library(tidyverse)
 library(ggtext)
 
-fish <- read_csv(here::here("data", "MCR_LTER_Annual_Fish_Survey_20250324.csv")) |> 
+fish <- read_csv(here::here("blogposts", "infographic", "data", "MCR_LTER_Annual_Fish_Survey_20250324.csv")) |> 
   janitor::clean_names()
 
-backreef <- read_csv(here::here("data", "MCR_LTER_Coral_Cover_Backreef_Long_20260219.csv"))
+backreef <- read_csv(here::here("blogposts", "infographic","data", "MCR_LTER_Coral_Cover_Backreef_Long_20260219.csv"))
 
 # Calculate mean coral cover for transects within LTER 1 
 coral_cover <- backreef |> 
